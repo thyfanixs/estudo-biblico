@@ -163,6 +163,9 @@ figure{margin:0;display:flex;flex-direction:column;gap:14px;min-width:0}
 figcaption{display:flex;flex-direction:column;gap:2px;text-align:center}
 figcaption .t{font-family:var(--f-cap);font-size:20px;letter-spacing:.04em}
 figcaption .a{font-style:italic;color:var(--ash);font-size:18px}
+.gallery .arch img{object-position:50% 8%}
+figcaption .c{font-size:14px;color:var(--ash);opacity:.8}
+figcaption .c a{color:inherit}
 figcaption .r{font-family:var(--f-cap);font-size:14px;letter-spacing:.22em;color:var(--gold)}
 
 /* BOOKS */
@@ -196,7 +199,7 @@ figcaption .r{font-family:var(--f-cap);font-size:14px;letter-spacing:.22em;color
 .org code{font-family:ui-monospace,Menlo,monospace;font-size:14px;color:var(--parchment)}
 .status{font-family:var(--f-cap);font-size:14px;letter-spacing:.14em;color:var(--gold);min-height:1em}
 
-footer{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;color:var(--ash);font-size:16px}
+footer{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;color:var(--ash);font-size:18px}
 footer a{color:var(--ash)}
 .done-msg{font-family:var(--f-black);font-size:clamp(40px,7vw,80px);color:var(--gold)}
 
@@ -275,7 +278,7 @@ footer a{color:var(--ash)}
   <section class="gallery-sec" aria-label="Galeria">
     <div class="sh" style="margin-bottom:36px">
       <h2><small class="cap">Galeria</small><span id="gal-title">Cenas de Gênesis</span></h2>
-      <p>Gravuras e pinturas clássicas do livro escolhido acima, todas em domínio público.</p>
+      <p>Gravuras, pinturas e ícones antigos do livro escolhido em “Ver o livro”.</p>
     </div>
     <div class="gallery" id="gallery"></div>
   </section>
@@ -329,7 +332,7 @@ footer a{color:var(--ash)}
   <footer>
     <div class="rule" style="width:100%" aria-hidden="true">✠</div>
     <span>1.189 capítulos · 66 livros · uma segunda-feira de cada vez</span>
-    <span>Gravuras e pinturas em domínio público, via Wikimedia Commons. Texto bíblico: <a href="https://www.bibliaonline.com.br/acf" target="_blank" rel="noopener">Bíblia Online</a> (Almeida Corrigida Fiel).</span>
+    <span>Obras de arte via Wikimedia Commons; autor, ano e crédito em cada legenda. Texto bíblico: <a href="https://www.bibliaonline.com.br/acf" target="_blank" rel="noopener">Bíblia Online</a> (Almeida Corrigida Fiel).</span>
   </footer>
 </main>
 
@@ -500,6 +503,8 @@ function renderGallery(b){
     const f=document.createElement("figure"), a=document.createElement("div"), im=document.createElement("img"), fc=document.createElement("figcaption");
     a.className="arch"; im.src=it.arquivo; im.alt=it.titulo+", "+it.artista; im.loading="lazy"; im.decoding="async"; a.append(im);
     for(const [cls,txt] of [["t",it.titulo],["a",it.artista+(it.ano?", "+it.ano:"")],["r",it.ref||""]]){ const sp=document.createElement("span"); sp.className=cls; sp.textContent=txt; fc.append(sp); }
+    if(it.credito){ const c=document.createElement("span"); c.className="c"; const l=document.createElement("a");
+      l.href=it.fonte||"#"; l.target="_blank"; l.rel="noopener"; l.textContent=it.credito; c.append(l); fc.append(c); }
     f.append(a,fc); g.append(f);
   }
   $("gallery").closest("section").hidden=list.length===0;

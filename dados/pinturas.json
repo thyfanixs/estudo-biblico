@@ -1,30 +1,1726 @@
 {
-  "livros": {
-    "Gênesis": [
-      {
-        "arquivo": "img/diluvio.jpg",
-        "titulo": "O Dilúvio",
-        "artista": "Gustave Doré",
-        "ano": "1866",
-        "ref": "Gênesis 7",
-        "fonte": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_The_Holy_Bible_-_Plate_I,_The_Deluge.jpg"
-      },
-      {
-        "arquivo": "img/isaque.jpg",
-        "titulo": "O Sacrifício de Isaque",
-        "artista": "Rembrandt",
-        "ano": "1635",
-        "ref": "Gênesis 22",
-        "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_035.jpg"
-      },
-      {
-        "arquivo": "img/jaco.jpg",
-        "titulo": "Jacó luta com o anjo",
-        "artista": "Gustave Doré",
-        "ano": "1866",
-        "ref": "Gênesis 32",
-        "fonte": "https://commons.wikimedia.org/wiki/File:024.Jacob_Wrestles_with_the_Angel.jpg"
-      }
-    ]
-  }
+ "livros": {
+  "Gênesis": [
+   {
+    "arquivo": "img/diluvio.jpg",
+    "titulo": "O Dilúvio",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Gênesis 7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_The_Holy_Bible_-_Plate_I,_The_Deluge.jpg"
+   },
+   {
+    "arquivo": "img/isaque.jpg",
+    "titulo": "O Sacrifício de Isaque",
+    "artista": "Rembrandt",
+    "ano": "1635",
+    "ref": "Gênesis 22",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_035.jpg"
+   },
+   {
+    "arquivo": "img/jaco.jpg",
+    "titulo": "Jacó luta com o anjo",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Gênesis 32",
+    "fonte": "https://commons.wikimedia.org/wiki/File:024.Jacob_Wrestles_with_the_Angel.jpg"
+   }
+  ],
+  "Êxodo": [
+   {
+    "arquivo": "img/livros/exodo-1.jpg",
+    "titulo": "Os egípcios se afogam no mar",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Êxodo 14",
+    "fonte": "https://commons.wikimedia.org/wiki/File:037.The_Egyptians_Drown_in_the_Sea.jpg"
+   },
+   {
+    "arquivo": "img/livros/exodo-2.jpg",
+    "titulo": "A Lei é dada no monte Sinai",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Êxodo 19",
+    "fonte": "https://commons.wikimedia.org/wiki/File:038.The_Giving_of_the_Law_on_Mount_Sinai.jpg"
+   },
+   {
+    "arquivo": "img/livros/exodo-3.jpg",
+    "titulo": "Moisés quebra as tábuas da Lei",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Êxodo 32",
+    "fonte": "https://commons.wikimedia.org/wiki/File:041A.Moses_Breaks_the_Tables_of_the_Law.jpg"
+   }
+  ],
+  "Levítico": [
+   {
+    "arquivo": "img/livros/levitico-1.jpg",
+    "titulo": "O bode expiatório",
+    "artista": "William Holman Hunt",
+    "ano": "1854–56",
+    "ref": "Levítico 16",
+    "fonte": "https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_The_Scapegoat.jpg"
+   },
+   {
+    "arquivo": "img/livros/levitico-2.jpg",
+    "titulo": "Os dois sacerdotes são fulminados",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Levítico 10:2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_The_Two_Priests_Are_Destroyed.jpg"
+   },
+   {
+    "arquivo": "img/livros/levitico-3.jpg",
+    "titulo": "Os corpos são levados",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Levítico 10:5",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_The_Dead_Bodies_Carried_Away.jpg"
+   }
+  ],
+  "Números": [
+   {
+    "arquivo": "img/livros/numeros-1.jpg",
+    "titulo": "Os espias voltam da Terra Prometida",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Números 13",
+    "fonte": "https://commons.wikimedia.org/wiki/File:041B.The_Spies_Return_from_the_Promised_Land.jpg"
+   },
+   {
+    "arquivo": "img/livros/numeros-2.jpg",
+    "titulo": "A serpente de bronze",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Números 21",
+    "fonte": "https://commons.wikimedia.org/wiki/File:042.The_Bronze_Serpent.jpg"
+   },
+   {
+    "arquivo": "img/livros/numeros-3.jpg",
+    "titulo": "Um anjo aparece a Balaão",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Números 22",
+    "fonte": "https://commons.wikimedia.org/wiki/File:043.An_Angel_Appears_to_Balaam.jpg"
+   }
+  ],
+  "Deuteronômio": [
+   {
+    "arquivo": "img/livros/deuteronomio-1.jpg",
+    "titulo": "Moisés com as tábuas da Lei",
+    "artista": "Rembrandt",
+    "ano": "1659",
+    "ref": "Deuteronômio 9:17",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Moses_with_the_Ten_Commandments_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/deuteronomio-2.jpg",
+    "titulo": "Moisés vê de longe a Terra Prometida",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Deuteronômio 34:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Moses_Sees_the_Promised_Land_from_Afar.jpg"
+   },
+   {
+    "arquivo": "img/livros/deuteronomio-3.jpg",
+    "titulo": "Moisés e Josué no Tabernáculo",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Deuteronômio 31:14",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Moses_and_Joshua_in_the_Tabernacle.jpg"
+   }
+  ],
+  "Josué": [
+   {
+    "arquivo": "img/livros/josue-1.jpg",
+    "titulo": "Os israelitas atravessam o Jordão",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Josué 3",
+    "fonte": "https://commons.wikimedia.org/wiki/File:044._The_Israelites_Cross_the_Jordan_River.jpg"
+   },
+   {
+    "arquivo": "img/livros/josue-2.jpg",
+    "titulo": "As muralhas de Jericó caem",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Josué 6",
+    "fonte": "https://commons.wikimedia.org/wiki/File:046.The_Walls_of_Jericho_Fall_Down.jpg"
+   },
+   {
+    "arquivo": "img/livros/josue-3.jpg",
+    "titulo": "Josué manda o sol parar",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Josué 10",
+    "fonte": "https://commons.wikimedia.org/wiki/File:051.Joshua_Commands_the_Sun_to_Stand_Still.jpg"
+   }
+  ],
+  "Juízes": [
+   {
+    "arquivo": "img/livros/juizes-1.jpg",
+    "titulo": "Jael mata Sísera",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Juízes 4",
+    "fonte": "https://commons.wikimedia.org/wiki/File:052.Jael_Kills_Sisera.jpg"
+   },
+   {
+    "arquivo": "img/livros/juizes-2.jpg",
+    "titulo": "Gideão escolhe 300 soldados",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Juízes 7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:054.Gideon_Chooses_300_Soldiers.jpg"
+   },
+   {
+    "arquivo": "img/livros/juizes-3.jpg",
+    "titulo": "A morte de Sansão",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Juízes 16",
+    "fonte": "https://commons.wikimedia.org/wiki/File:064.The_Death_of_Samson.jpg"
+   }
+  ],
+  "Rute": [
+   {
+    "arquivo": "img/livros/rute-1.jpg",
+    "titulo": "Noemi e suas noras",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Rute 1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:068.Naomi_and_Her_Daughters-in-Law.jpg"
+   },
+   {
+    "arquivo": "img/livros/rute-2.jpg",
+    "titulo": "Rute e Boaz",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Rute 2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:069.Ruth_and_Boaz.jpg"
+   },
+   {
+    "arquivo": "img/livros/rute-3.jpg",
+    "titulo": "O Verão (Rute e Boaz)",
+    "artista": "Nicolas Poussin",
+    "ano": "1660–64",
+    "ref": "Rute 2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_L%27%C3%89t%C3%A9_ou_Ruth_et_Booz.jpg"
+   }
+  ],
+  "1 Samuel": [
+   {
+    "arquivo": "img/livros/1-samuel-1.jpg",
+    "titulo": "Davi mata Golias",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Samuel 17",
+    "fonte": "https://commons.wikimedia.org/wiki/File:071A.David_Slays_Goliath.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-samuel-2.jpg",
+    "titulo": "Davi e Jônatas",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Samuel 20",
+    "fonte": "https://commons.wikimedia.org/wiki/File:073A.David_and_Jonathan.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-samuel-3.jpg",
+    "titulo": "Saul e a médium de En-Dor",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Samuel 28",
+    "fonte": "https://commons.wikimedia.org/wiki/File:075.Saul_and_the_Witch_of_Endor.jpg"
+   }
+  ],
+  "2 Samuel": [
+   {
+    "arquivo": "img/livros/2-samuel-1.jpg",
+    "titulo": "Davi dança diante do Senhor",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "2 Samuel 6:14",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_David_Danced_Before_the_Lord_with_All_His_Might.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-samuel-2.jpg",
+    "titulo": "A morte de Absalão",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "2 Samuel 18",
+    "fonte": "https://commons.wikimedia.org/wiki/File:080.The_Death_of_Absalom.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-samuel-3.jpg",
+    "titulo": "Davi chora por Absalão",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "2 Samuel 18:33",
+    "fonte": "https://commons.wikimedia.org/wiki/File:081.David_Mourns_the_Death_of_Absalom.jpg"
+   }
+  ],
+  "1 Reis": [
+   {
+    "arquivo": "img/livros/1-reis-1.jpg",
+    "titulo": "O julgamento de Salomão",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Reis 3",
+    "fonte": "https://commons.wikimedia.org/wiki/File:084.The_Judgment_of_Solomon.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-reis-2.jpg",
+    "titulo": "Salomão recebe a rainha de Sabá",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Reis 10",
+    "fonte": "https://commons.wikimedia.org/wiki/File:086.Solomon_Receives_the_Queen_of_Sheba.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-reis-3.jpg",
+    "titulo": "Elias e os profetas de Baal",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Reis 18",
+    "fonte": "https://commons.wikimedia.org/wiki/File:090.The_Prophets_of_Baal_Are_Slaughtered.jpg"
+   }
+  ],
+  "2 Reis": [
+   {
+    "arquivo": "img/livros/2-reis-1.jpg",
+    "titulo": "Elias sobe ao céu num carro de fogo",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "2 Reis 2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:095.Elijah_Ascends_to_Heaven_in_a_Chariot_of_Fire.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-reis-2.jpg",
+    "titulo": "A morte de Jezabel",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "2 Reis 9",
+    "fonte": "https://commons.wikimedia.org/wiki/File:097.The_Death_of_Jezebel.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-reis-3.jpg",
+    "titulo": "O exército de Senaqueribe é destruído",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "2 Reis 19",
+    "fonte": "https://commons.wikimedia.org/wiki/File:101.Sennacherib%27s_Army_Is_Destroyed.jpg"
+   }
+  ],
+  "1 Crônicas": [
+   {
+    "arquivo": "img/livros/1-cronicas-1.jpg",
+    "titulo": "A peste em Jerusalém",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Crônicas 21",
+    "fonte": "https://commons.wikimedia.org/wiki/File:102A.The_Plague_of_Jerusalem.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-cronicas-2.jpg",
+    "titulo": "Cedros são cortados para o Templo",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Crônicas 22:4",
+    "fonte": "https://commons.wikimedia.org/wiki/File:085.Cedars_Are_Cut_Down_for_the_Jerusalem_Temple.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-cronicas-3.jpg",
+    "titulo": "O rei Davi tocando harpa",
+    "artista": "Peter Paul Rubens",
+    "ano": "c. 1616",
+    "ref": "1 Crônicas 16",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_King_David_Playing_the_Harp_-_BF812_-_Barnes_Foundation.jpg"
+   }
+  ],
+  "2 Crônicas": [
+   {
+    "arquivo": "img/livros/2-cronicas-1.jpg",
+    "titulo": "Salomão dedica o Templo",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "2 Crônicas 6",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Solomon_Dedicates_the_Temple_at_Jerusalem.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-cronicas-2.jpg",
+    "titulo": "Os exércitos de Amom e Moabe são vencidos",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "2 Crônicas 20",
+    "fonte": "https://commons.wikimedia.org/wiki/File:103.The_Ammonite_and_Moabite_Armies_Are_Destroyed.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-cronicas-3.jpg",
+    "titulo": "O rei Uzias ferido de lepra",
+    "artista": "Rembrandt",
+    "ano": "1635",
+    "ref": "2 Crônicas 26",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_King_Uzziah_Stricken_with_Leprosy.jpg"
+   }
+  ],
+  "Esdras": [
+   {
+    "arquivo": "img/livros/esdras-1.jpg",
+    "titulo": "Ciro devolve os utensílios do Templo",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Esdras 1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:104.Cyrus_Restores_the_Vessels_of_the_Temple.jpg"
+   },
+   {
+    "arquivo": "img/livros/esdras-2.jpg",
+    "titulo": "Artaxerxes concede liberdade aos judeus",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Esdras 7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:106.Artaxerxes_Grants_Freedom_to_the_Jews.jpg"
+   },
+   {
+    "arquivo": "img/livros/esdras-3.jpg",
+    "titulo": "Esdras ajoelhado em oração",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Esdras 9",
+    "fonte": "https://commons.wikimedia.org/wiki/File:107.Ezra_Kneels_in_Prayer.jpg"
+   }
+  ],
+  "Neemias": [
+   {
+    "arquivo": "img/livros/neemias-1.jpg",
+    "titulo": "Neemias vê as ruínas dos muros",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Neemias 2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:108.Nehemiah_Views_the_Ruins_of_Jerusalem%27s_Walls.jpg"
+   },
+   {
+    "arquivo": "img/livros/neemias-2.jpg",
+    "titulo": "Esdras lê a Lei ao povo",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Neemias 8",
+    "fonte": "https://commons.wikimedia.org/wiki/File:109.Ezra_Reads_the_Law_to_the_People.jpg"
+   },
+   {
+    "arquivo": "img/livros/neemias-3.jpg",
+    "titulo": "A procissão sobre os muros",
+    "artista": "James Tissot e Michel Simonidy",
+    "ano": "c. 1904",
+    "ref": "Neemias 12",
+    "fonte": "https://commons.wikimedia.org/wiki/File:La_procession_sur_les_murs_(Nehemiah_12_36)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_Michel_Simonidy_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg",
+    "credito": "Foto: Phillip Medhurst, CC BY-SA 4.0"
+   }
+  ],
+  "Ester": [
+   {
+    "arquivo": "img/livros/ester-1.jpg",
+    "titulo": "Ester diante do rei",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Ester 5",
+    "fonte": "https://commons.wikimedia.org/wiki/File:115.Esther_Before_the_King.jpg"
+   },
+   {
+    "arquivo": "img/livros/ester-2.jpg",
+    "titulo": "O triunfo de Mardoqueu",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Ester 6",
+    "fonte": "https://commons.wikimedia.org/wiki/File:116.The_Triumph_of_Mordecai.jpg"
+   },
+   {
+    "arquivo": "img/livros/ester-3.jpg",
+    "titulo": "Assuero e Hamã no banquete de Ester",
+    "artista": "Rembrandt",
+    "ano": "1660",
+    "ref": "Ester 7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Ahasuerus,_Haman_and_Esther_-_Google_Art_Project.jpg"
+   }
+  ],
+  "Jó": [
+   {
+    "arquivo": "img/livros/jo-1.jpg",
+    "titulo": "Jó recebe as más notícias",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Jó 1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:118.Job_Hears_of_His_Misfortunes.jpg"
+   },
+   {
+    "arquivo": "img/livros/jo-2.jpg",
+    "titulo": "Jó e seus amigos",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Jó 2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:119.Job_Speaks_with_His_Friends.jpg"
+   },
+   {
+    "arquivo": "img/livros/jo-3.jpg",
+    "titulo": "Quando as estrelas da manhã cantavam juntas",
+    "artista": "William Blake",
+    "ano": "c. 1804–07",
+    "ref": "Jó 38:7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:William_Blake_-_When_the_Morning_Stars_Sang_Together%22_-_Google_Art_Project.jpg"
+   }
+  ],
+  "Salmos": [
+   {
+    "arquivo": "img/livros/salmos-1.jpg",
+    "titulo": "O rei Davi tocando harpa",
+    "artista": "Gerard van Honthorst",
+    "ano": "1622",
+    "ref": "Salmos",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Gerard_van_Honthorst_-_King_David_Playing_the_Harp_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/salmos-2.jpg",
+    "titulo": "O Bom Pastor",
+    "artista": "Bernhard Plockhorst",
+    "ano": "séc. XIX",
+    "ref": "Salmos 23",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Bernhard_Plockhorst_-_Good_Shephard.jpg"
+   },
+   {
+    "arquivo": "img/livros/salmos-3.jpg",
+    "titulo": "Davi canta ao Senhor",
+    "artista": "James Tissot e Michel Simonidy",
+    "ano": "c. 1904",
+    "ref": "Salmos 57:7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:David_chantant_(Psalm_57_7)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_Michel_Simonidy_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg",
+    "credito": "Foto: Phillip Medhurst, CC BY-SA 4.0"
+   }
+  ],
+  "Provérbios": [
+   {
+    "arquivo": "img/livros/proverbios-1.jpg",
+    "titulo": "A sabedoria de Salomão",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Provérbios 1:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_The_Wisdom_of_Solomon.jpg"
+   },
+   {
+    "arquivo": "img/livros/proverbios-2.jpg",
+    "titulo": "O rei Salomão na velhice",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "1 Reis 4:32",
+    "fonte": "https://commons.wikimedia.org/wiki/File:087.King_Solomon_in_Old_Age.jpg"
+   },
+   {
+    "arquivo": "img/livros/proverbios-3.jpg",
+    "titulo": "O sonho de Salomão",
+    "artista": "Luca Giordano",
+    "ano": "1694–95",
+    "ref": "1 Reis 3:9",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Luca_Giordano_-_Dream_of_Solomon_-_WGA09004.jpg"
+   }
+  ],
+  "Eclesiastes": [
+   {
+    "arquivo": "img/livros/eclesiastes-1.jpg",
+    "titulo": "Vaidade das vaidades (natureza-morta)",
+    "artista": "Harmen Steenwijck",
+    "ano": "c. 1640",
+    "ref": "Eclesiastes 1:2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Harmen_Steenwijck_-_Vanitas_Still-Life_-_WGA21768.jpg"
+   },
+   {
+    "arquivo": "img/livros/eclesiastes-2.jpg",
+    "titulo": "Natureza-morta vanitas",
+    "artista": "Franciscus Gijsbrechts",
+    "ano": "séc. XVII",
+    "ref": "Eclesiastes 12:7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Franciscus_Gijsbrechts_-_Vanitas_still_life_with_a_skull,_a_globe,_a_trumpet_and_smoking_implements.jpg"
+   },
+   {
+    "arquivo": "img/livros/eclesiastes-3.jpg",
+    "titulo": "Os Embaixadores",
+    "artista": "Hans Holbein, o Jovem",
+    "ano": "1533",
+    "ref": "Eclesiastes 3:2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg"
+   }
+  ],
+  "Cânticos": [
+   {
+    "arquivo": "img/livros/canticos-1.jpg",
+    "titulo": "Cântico dos Cânticos",
+    "artista": "Gustave Moreau",
+    "ano": "1893",
+    "ref": "Cânticos",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Gustave_Moreau_-_Song_of_Songs_(Cantique_des_Cantiques)_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/canticos-2.jpg",
+    "titulo": "O Cântico dos Cânticos",
+    "artista": "Gustave Moreau",
+    "ano": "1853",
+    "ref": "Cânticos",
+    "fonte": "https://commons.wikimedia.org/wiki/File:The_Song_of_Songs_1853_Gustave_Moreau.jpg"
+   },
+   {
+    "arquivo": "img/livros/canticos-3.jpg",
+    "titulo": "A Amada (A Noiva)",
+    "artista": "Dante Gabriel Rossetti",
+    "ano": "1865–66",
+    "ref": "Cânticos 1:2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:The_Beloved_by_Dante_Gabriel_Rossetti.jpg"
+   }
+  ],
+  "Isaías": [
+   {
+    "arquivo": "img/livros/isaias-1.jpg",
+    "titulo": "O profeta Isaías",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Isaías 1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:120.The_Prophet_Isaiah.jpg"
+   },
+   {
+    "arquivo": "img/livros/isaias-2.jpg",
+    "titulo": "Isaías vê a destruição da Babilônia",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Isaías 13",
+    "fonte": "https://commons.wikimedia.org/wiki/File:121.Isaiah%27s_Vision_of_the_Destruction_of_Babylon.jpg"
+   },
+   {
+    "arquivo": "img/livros/isaias-3.jpg",
+    "titulo": "O profeta Isaías (Capela Sistina)",
+    "artista": "Michelangelo",
+    "ano": "1509",
+    "ref": "Isaías",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Jesaja_(Michelangelo).jpg"
+   }
+  ],
+  "Jeremias": [
+   {
+    "arquivo": "img/livros/jeremias-1.jpg",
+    "titulo": "O profeta Jeremias",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Jeremias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:123.The_Prophet_Jeremiah.jpg"
+   },
+   {
+    "arquivo": "img/livros/jeremias-2.jpg",
+    "titulo": "Baruque escreve as profecias de Jeremias",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Jeremias 36:4",
+    "fonte": "https://commons.wikimedia.org/wiki/File:123.Baruch_Writes_Jeremiah%27s_Prophecies.jpg"
+   },
+   {
+    "arquivo": "img/livros/jeremias-3.jpg",
+    "titulo": "O profeta Jeremias (Capela Sistina)",
+    "artista": "Michelangelo",
+    "ano": "1511",
+    "ref": "Jeremias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:The_Prophet_Jeremiah,_from_the_series_of_Prophets_and_Sibyls_in_the_Sistine_Chapel_MET_DP821566.jpg"
+   }
+  ],
+  "Lamentações": [
+   {
+    "arquivo": "img/livros/lamentacoes-1.jpg",
+    "titulo": "O povo chora sobre as ruínas de Jerusalém",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Lamentações 1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:124.People_Mourn_over_the_Destruction_of_Jerusalem.jpg"
+   },
+   {
+    "arquivo": "img/livros/lamentacoes-2.jpg",
+    "titulo": "Jeremias lamenta a destruição de Jerusalém",
+    "artista": "Rembrandt",
+    "ano": "1630",
+    "ref": "Lamentações 1:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Jeremia_treurend_over_de_verwoesting_van_Jeruzalem_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/lamentacoes-3.jpg",
+    "titulo": "Os judeus de luto no exílio",
+    "artista": "Eduard Bendemann",
+    "ano": "c. 1832",
+    "ref": "Lamentações 5:15",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Jews_Mourning_in_Exile_-_Eduard_Bendemann_-_Wallraf-Richartz-Museum_%26_Fondation_Corboud-6071_(without_frame).jpg"
+   }
+  ],
+  "Ezequiel": [
+   {
+    "arquivo": "img/livros/ezequiel-1.jpg",
+    "titulo": "O profeta Ezequiel",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Ezequiel",
+    "fonte": "https://commons.wikimedia.org/wiki/File:126.The_Prophet_Ezekiel.jpg"
+   },
+   {
+    "arquivo": "img/livros/ezequiel-2.jpg",
+    "titulo": "O vale de ossos secos",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Ezequiel 37",
+    "fonte": "https://commons.wikimedia.org/wiki/File:127.Ezekiel%E2%80%99s_Vision_of_the_Valley_of_Dry_Bones.jpg"
+   },
+   {
+    "arquivo": "img/livros/ezequiel-3.jpg",
+    "titulo": "O profeta Ezequiel (Capela Sistina)",
+    "artista": "Michelangelo",
+    "ano": "1510",
+    "ref": "Ezequiel",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Michelangelo,_profeti,_Ezekiel_01.jpg"
+   }
+  ],
+  "Daniel": [
+   {
+    "arquivo": "img/livros/daniel-1.jpg",
+    "titulo": "Os três jovens na fornalha",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Daniel 3",
+    "fonte": "https://commons.wikimedia.org/wiki/File:129.Shadrach,_Meshach_and_Abednego_in_the_Furnace.jpg"
+   },
+   {
+    "arquivo": "img/livros/daniel-2.jpg",
+    "titulo": "O banquete de Belsazar",
+    "artista": "Rembrandt",
+    "ano": "c. 1635",
+    "ref": "Daniel 5",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt-Belsazar.jpg"
+   },
+   {
+    "arquivo": "img/livros/daniel-3.jpg",
+    "titulo": "Daniel na cova dos leões",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Daniel 6",
+    "fonte": "https://commons.wikimedia.org/wiki/File:131.Daniel_in_the_Lions%27_Den.jpg"
+   }
+  ],
+  "Oseias": [
+   {
+    "arquivo": "img/livros/oseias-1.jpg",
+    "titulo": "O profeta Oseias",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Oseias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Hosea_by_James_Tissot.jpg"
+   },
+   {
+    "arquivo": "img/livros/oseias-2.jpg",
+    "titulo": "O profeta Oseias (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Oseias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Hosea.jpg"
+   },
+   {
+    "arquivo": "img/livros/oseias-3.jpg",
+    "titulo": "O profeta Oseias",
+    "artista": "Duccio di Buoninsegna",
+    "ano": "1308–11",
+    "ref": "Oseias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Duccio_di_Buoninsegna_063.jpg"
+   }
+  ],
+  "Joel": [
+   {
+    "arquivo": "img/livros/joel-1.jpg",
+    "titulo": "O profeta Joel (Capela Sistina)",
+    "artista": "Michelangelo",
+    "ano": "1509",
+    "ref": "Joel",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Joel_(Michelangelo).jpg"
+   },
+   {
+    "arquivo": "img/livros/joel-2.jpg",
+    "titulo": "O profeta Joel",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Joel",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Joel.jpg"
+   },
+   {
+    "arquivo": "img/livros/joel-3.jpg",
+    "titulo": "O profeta Joel (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Joel",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Joel-prophet.jpg"
+   }
+  ],
+  "Amós": [
+   {
+    "arquivo": "img/livros/amos-1.jpg",
+    "titulo": "O profeta Amós",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Amós 1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:136.The_Prophet_Amos.jpg"
+   },
+   {
+    "arquivo": "img/livros/amos-2.jpg",
+    "titulo": "O profeta Amós",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Amós",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Amos.jpg"
+   },
+   {
+    "arquivo": "img/livros/amos-3.jpg",
+    "titulo": "O profeta Amós (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Amós",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Amos-prophet.jpg"
+   }
+  ],
+  "Obadias": [
+   {
+    "arquivo": "img/livros/obadias-1.jpg",
+    "titulo": "O profeta Obadias",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Obadias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Obadiah_by_James_Tissot.jpg"
+   },
+   {
+    "arquivo": "img/livros/obadias-2.jpg",
+    "titulo": "O profeta Obadias (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Obadias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Obadiah_(%D0%9E%D0%B2%D0%B4%D0%B8%D0%B9).jpg"
+   },
+   {
+    "arquivo": "img/livros/obadias-3.jpg",
+    "titulo": "Friso dos Profetas (estudo)",
+    "artista": "John Singer Sargent",
+    "ano": "1890s",
+    "ref": "Os profetas",
+    "fonte": "https://commons.wikimedia.org/wiki/File:John_Singer_Sargent_-_Frieze_of_the_Prophets_-_37.45_-_Museum_of_Fine_Arts.jpg"
+   }
+  ],
+  "Jonas": [
+   {
+    "arquivo": "img/livros/jonas-1.jpg",
+    "titulo": "Jonas é lançado na praia pelo peixe",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Jonas 2",
+    "fonte": "https://commons.wikimedia.org/wiki/File:137.Jonah_Is_Spewed_Forth_by_the_Whale.jpg"
+   },
+   {
+    "arquivo": "img/livros/jonas-2.jpg",
+    "titulo": "Jonas prega aos ninivitas",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Jonas 3",
+    "fonte": "https://commons.wikimedia.org/wiki/File:138.Jonah_Preaches_to_the_Ninevites.jpg"
+   },
+   {
+    "arquivo": "img/livros/jonas-3.jpg",
+    "titulo": "O profeta Jonas (Capela Sistina)",
+    "artista": "Michelangelo",
+    "ano": "1511",
+    "ref": "Jonas",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Sistine_jonah.jpg"
+   }
+  ],
+  "Miqueias": [
+   {
+    "arquivo": "img/livros/miqueias-1.jpg",
+    "titulo": "Miqueias chama Israel ao arrependimento",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Miqueias 7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:139.Micah_Exhorts_the_Israelites_to_Repent.jpg"
+   },
+   {
+    "arquivo": "img/livros/miqueias-2.jpg",
+    "titulo": "O profeta Miqueias",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Miqueias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Micah_by_James_Tissot.jpg"
+   },
+   {
+    "arquivo": "img/livros/miqueias-3.jpg",
+    "titulo": "O profeta Miqueias (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Miqueias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Micah_prophet.jpg"
+   }
+  ],
+  "Naum": [
+   {
+    "arquivo": "img/livros/naum-1.jpg",
+    "titulo": "O profeta Naum",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Naum",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Nahum.jpg"
+   },
+   {
+    "arquivo": "img/livros/naum-2.jpg",
+    "titulo": "O profeta Naum (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Naum",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Nahum-prophet.jpg"
+   },
+   {
+    "arquivo": "img/livros/naum-3.jpg",
+    "titulo": "A queda de Nínive",
+    "artista": "John Martin",
+    "ano": "1829",
+    "ref": "Naum 3",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Fall_of_nineveh.jpg",
+    "credito": "Foto: (Mu-tamajo) むーたんじょ, CC BY-SA 4.0"
+   }
+  ],
+  "Habacuque": [
+   {
+    "arquivo": "img/livros/habacuque-1.jpg",
+    "titulo": "O profeta Habacuque",
+    "artista": "James Tissot e Charles Hoffbauer",
+    "ano": "c. 1904",
+    "ref": "Habacuque 1:12",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Habacuc_(Habakkuk_1_12)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_Charles_Hoffbauer_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg",
+    "credito": "Foto: Phillip Medhurst, CC BY-SA 4.0"
+   },
+   {
+    "arquivo": "img/livros/habacuque-2.jpg",
+    "titulo": "O profeta Habacuque (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Habacuque",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Habakkuk.jpg"
+   },
+   {
+    "arquivo": "img/livros/habacuque-3.jpg",
+    "titulo": "Friso dos Profetas (estudo)",
+    "artista": "John Singer Sargent",
+    "ano": "1890s",
+    "ref": "Os profetas",
+    "fonte": "https://commons.wikimedia.org/wiki/File:John_Singer_Sargent_-_Frieze_of_the_Prophets_-_37.45_-_Museum_of_Fine_Arts.jpg"
+   }
+  ],
+  "Sofonias": [
+   {
+    "arquivo": "img/livros/sofonias-1.jpg",
+    "titulo": "O profeta Sofonias",
+    "artista": "James Tissot e Charles Hoffbauer",
+    "ano": "c. 1904",
+    "ref": "Sofonias 1:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Drawing_412_Zephaniah_Zephaniah_1_14_for_Brunoff_399_Sophonie.jpg"
+   },
+   {
+    "arquivo": "img/livros/sofonias-2.jpg",
+    "titulo": "O profeta Sofonias (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Sofonias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Zephaniah.jpg"
+   },
+   {
+    "arquivo": "img/livros/sofonias-3.jpg",
+    "titulo": "O grande dia da sua ira",
+    "artista": "John Martin",
+    "ano": "1851–53",
+    "ref": "Sofonias 1:14",
+    "fonte": "https://commons.wikimedia.org/wiki/File:John_Martin_-_The_Great_Day_of_His_Wrath_-_Google_Art_Project.jpg"
+   }
+  ],
+  "Ageu": [
+   {
+    "arquivo": "img/livros/ageu-1.jpg",
+    "titulo": "O profeta Ageu",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Ageu",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Haggai.jpg"
+   },
+   {
+    "arquivo": "img/livros/ageu-2.jpg",
+    "titulo": "O profeta Ageu (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Ageu",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Haggai-prophet.jpg"
+   },
+   {
+    "arquivo": "img/livros/ageu-3.jpg",
+    "titulo": "Começa a reconstrução do Templo",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Ageu 1:14",
+    "fonte": "https://commons.wikimedia.org/wiki/File:105.The_Rebuilding_of_the_Temple_Is_Begun.jpg"
+   }
+  ],
+  "Zacarias": [
+   {
+    "arquivo": "img/livros/zacarias-1.jpg",
+    "titulo": "O profeta Zacarias (Capela Sistina)",
+    "artista": "Michelangelo",
+    "ano": "1509",
+    "ref": "Zacarias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Michelangelo,_profeti,_Zechariah_01.jpg"
+   },
+   {
+    "arquivo": "img/livros/zacarias-2.jpg",
+    "titulo": "O profeta Zacarias",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Zacarias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Zechariah.jpg"
+   },
+   {
+    "arquivo": "img/livros/zacarias-3.jpg",
+    "titulo": "A visão dos quatro carros",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Zacarias 6",
+    "fonte": "https://commons.wikimedia.org/wiki/File:140.Zechariah%27s_Vision_of_Four_Chariots.jpg"
+   }
+  ],
+  "Malaquias": [
+   {
+    "arquivo": "img/livros/malaquias-1.jpg",
+    "titulo": "O profeta Malaquias",
+    "artista": "James Tissot",
+    "ano": "c. 1896–1902",
+    "ref": "Malaquias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Tissot_Malachi.jpg"
+   },
+   {
+    "arquivo": "img/livros/malaquias-2.jpg",
+    "titulo": "O profeta Malaquias (ícone)",
+    "artista": "Ícone russo",
+    "ano": "séc. XVIII",
+    "ref": "Malaquias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Malachi.jpg"
+   },
+   {
+    "arquivo": "img/livros/malaquias-3.jpg",
+    "titulo": "O profeta Malaquias",
+    "artista": "Duccio di Buoninsegna",
+    "ano": "1308–11",
+    "ref": "Malaquias",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Duccio_di_Buoninsegna_066.jpg"
+   }
+  ],
+  "Mateus": [
+   {
+    "arquivo": "img/livros/mateus-1.jpg",
+    "titulo": "A vocação de São Mateus",
+    "artista": "Caravaggio",
+    "ano": "1599–1600",
+    "ref": "Mateus 9:9",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Caravaggio,_Michelangelo_Merisi_da_-_The_Calling_of_Saint_Matthew_-_1599-1600_(hi_res).jpg"
+   },
+   {
+    "arquivo": "img/livros/mateus-2.jpg",
+    "titulo": "O Sermão do Monte",
+    "artista": "Carl Bloch",
+    "ano": "1877",
+    "ref": "Mateus 5",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Carl_Bloch_-_The_Sermon_on_the_Mount.jpg"
+   },
+   {
+    "arquivo": "img/livros/mateus-3.jpg",
+    "titulo": "A Última Ceia",
+    "artista": "Leonardo da Vinci",
+    "ano": "1495–98",
+    "ref": "Mateus 26",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg"
+   }
+  ],
+  "Marcos": [
+   {
+    "arquivo": "img/livros/marcos-1.jpg",
+    "titulo": "Cristo na tempestade no mar da Galileia",
+    "artista": "Rembrandt",
+    "ano": "1633",
+    "ref": "Marcos 4:37",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg"
+   },
+   {
+    "arquivo": "img/livros/marcos-2.jpg",
+    "titulo": "Getsêmani",
+    "artista": "Carl Bloch",
+    "ano": "1880",
+    "ref": "Marcos 14:32",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Carl_Heinrich_Bloch_-_Gethsemane.jpg"
+   },
+   {
+    "arquivo": "img/livros/marcos-3.jpg",
+    "titulo": "A Ressurreição",
+    "artista": "Carl Bloch",
+    "ano": "1875",
+    "ref": "Marcos 16",
+    "fonte": "https://commons.wikimedia.org/wiki/File:TheResurrectionOfChrist.jpg"
+   }
+  ],
+  "Lucas": [
+   {
+    "arquivo": "img/livros/lucas-1.jpg",
+    "titulo": "O bom samaritano",
+    "artista": "Rembrandt",
+    "ano": "1630",
+    "ref": "Lucas 10",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_033.jpg"
+   },
+   {
+    "arquivo": "img/livros/lucas-2.jpg",
+    "titulo": "O retorno do filho pródigo",
+    "artista": "Rembrandt",
+    "ano": "c. 1668",
+    "ref": "Lucas 15",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/lucas-3.jpg",
+    "titulo": "A ceia em Emaús",
+    "artista": "Rembrandt",
+    "ano": "1648",
+    "ref": "Lucas 24",
+    "fonte": "https://commons.wikimedia.org/wiki/File:The_Supper_at_Emmaus,_by_Rembrandt.jpg"
+   }
+  ],
+  "João": [
+   {
+    "arquivo": "img/livros/joao-1.jpg",
+    "titulo": "Jesus e a mulher samaritana",
+    "artista": "Carl Bloch",
+    "ano": "séc. XIX",
+    "ref": "João 4",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Carl_Heinrich_Bloch_-_Woman_at_the_Well.jpg"
+   },
+   {
+    "arquivo": "img/livros/joao-2.jpg",
+    "titulo": "A ressurreição de Lázaro",
+    "artista": "Rembrandt",
+    "ano": "c. 1630",
+    "ref": "João 11",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_The_Raising_of_Lazarus_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/joao-3.jpg",
+    "titulo": "A incredulidade de Tomé",
+    "artista": "Caravaggio",
+    "ano": "1601–02",
+    "ref": "João 20",
+    "fonte": "https://commons.wikimedia.org/wiki/File:The_Incredulity_of_Saint_Thomas-Caravaggio_(1601-2).jpg"
+   }
+  ],
+  "Atos": [
+   {
+    "arquivo": "img/livros/atos-1.jpg",
+    "titulo": "A morte de Ananias",
+    "artista": "Rafael",
+    "ano": "1515",
+    "ref": "Atos 5",
+    "fonte": "https://commons.wikimedia.org/wiki/File:V%26A_-_Raphael,_The_Death_of_Ananias_(1515).jpg"
+   },
+   {
+    "arquivo": "img/livros/atos-2.jpg",
+    "titulo": "A conversão de São Paulo",
+    "artista": "Caravaggio",
+    "ano": "1601",
+    "ref": "Atos 9",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Conversion_on_the_Way_to_Damascus-Caravaggio_(c.1600-1).jpg"
+   },
+   {
+    "arquivo": "img/livros/atos-3.jpg",
+    "titulo": "Paulo prega em Atenas",
+    "artista": "Rafael",
+    "ano": "1515",
+    "ref": "Atos 17",
+    "fonte": "https://commons.wikimedia.org/wiki/File:V%26A_-_Raphael,_St_Paul_Preaching_in_Athens_(1515).jpg"
+   }
+  ],
+  "Romanos": [
+   {
+    "arquivo": "img/livros/romanos-1.jpg",
+    "titulo": "São Paulo escrevendo suas cartas",
+    "artista": "Valentin de Boulogne",
+    "ano": "c. 1618–20",
+    "ref": "Romanos 1:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Valentin_de_Boulogne_-_Saint_Paul_Writing_His_Epistles_-_BF.1991.4_-_Museum_of_Fine_Arts.jpg"
+   },
+   {
+    "arquivo": "img/livros/romanos-2.jpg",
+    "titulo": "São Paulo",
+    "artista": "Diego Velázquez",
+    "ano": "c. 1619",
+    "ref": "Romanos",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Saint_Paul_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/romanos-3.jpg",
+    "titulo": "São Paulo",
+    "artista": "Peter Paul Rubens",
+    "ano": "c. 1611",
+    "ref": "Romanos",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Saint_Paul,_by_Peter_Paul_Rubens_(Museo_del_Prado).jpg"
+   }
+  ],
+  "1 Coríntios": [
+   {
+    "arquivo": "img/livros/1-corintios-1.jpg",
+    "titulo": "A Última Ceia",
+    "artista": "Juan de Juanes",
+    "ano": "c. 1562",
+    "ref": "1 Coríntios 11:23",
+    "fonte": "https://commons.wikimedia.org/wiki/File:La_%C3%9Altima_Cena_(Juan_de_Juanes)_(restaurada).jpg"
+   },
+   {
+    "arquivo": "img/livros/1-corintios-2.jpg",
+    "titulo": "O apóstolo Paulo",
+    "artista": "Rembrandt",
+    "ano": "c. 1636",
+    "ref": "1 Coríntios",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Apostle_Paul_-_WGA19120.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-corintios-3.jpg",
+    "titulo": "São Pedro e São Paulo",
+    "artista": "Guido Reni",
+    "ano": "c. 1605",
+    "ref": "1 Coríntios 1:12",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Guido_Reni_-_Sts_Peter_and_Paul_-_WGA19309.jpg"
+   }
+  ],
+  "2 Coríntios": [
+   {
+    "arquivo": "img/livros/2-corintios-1.jpg",
+    "titulo": "São Paulo",
+    "artista": "El Greco",
+    "ano": "c. 1598–1600",
+    "ref": "2 Coríntios",
+    "fonte": "https://commons.wikimedia.org/wiki/File:El_Greco_-_St._Paul_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-corintios-2.jpg",
+    "titulo": "São Paulo",
+    "artista": "Guido Reni",
+    "ano": "1633–34",
+    "ref": "2 Coríntios",
+    "fonte": "https://commons.wikimedia.org/wiki/File:San_Pablo.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-corintios-3.jpg",
+    "titulo": "O naufrágio de Paulo em Malta",
+    "artista": "Laurent de La Hyre",
+    "ano": "séc. XVII",
+    "ref": "2 Coríntios 11:25",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Laurent_de_La_Hyre%27s_Saint_Paul_Shipwrecked_on_Malta.jpg"
+   }
+  ],
+  "Gálatas": [
+   {
+    "arquivo": "img/livros/galatas-1.jpg",
+    "titulo": "A conversão de São Paulo",
+    "artista": "Caravaggio",
+    "ano": "c. 1600",
+    "ref": "Gálatas 1:15",
+    "fonte": "https://commons.wikimedia.org/wiki/File:The_Conversion_of_Saint_Paul-Caravaggio_(c._1600-1).jpg"
+   },
+   {
+    "arquivo": "img/livros/galatas-2.jpg",
+    "titulo": "Dois velhos discutindo (Pedro e Paulo)",
+    "artista": "Rembrandt",
+    "ano": "1628",
+    "ref": "Gálatas 2:11",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Two_Old_Men_Disputing_(%E2%80%9CSt._Peter_and_St._Paul%E2%80%9D).jpg"
+   },
+   {
+    "arquivo": "img/livros/galatas-3.jpg",
+    "titulo": "São Paulo",
+    "artista": "Pompeo Batoni",
+    "ano": "séc. XVIII",
+    "ref": "Gálatas",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Pompeo_Batoni_(1708-1787)_-_Saint_Paul_-_266911_-_National_Trust.jpg"
+   }
+  ],
+  "Efésios": [
+   {
+    "arquivo": "img/livros/efesios-1.jpg",
+    "titulo": "São Paulo",
+    "artista": "Rembrandt",
+    "ano": "c. 1657",
+    "ref": "Efésios",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Saint_Paul,_Rembrandt_van_Rijn_(and_Workshop%3F),_c._1657.jpg"
+   },
+   {
+    "arquivo": "img/livros/efesios-2.jpg",
+    "titulo": "São Paulo",
+    "artista": "Masaccio",
+    "ano": "1426",
+    "ref": "Efésios",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Masaccio_Pisa_02.JPG",
+    "credito": "Foto: Miguel Hermoso Cuesta, CC BY-SA 4.0"
+   },
+   {
+    "arquivo": "img/livros/efesios-3.jpg",
+    "titulo": "Autorretrato como o apóstolo Paulo",
+    "artista": "Rembrandt",
+    "ano": "1661",
+    "ref": "Efésios",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Self-Portrait_as_the_Apostle_Paul_-_WGA19222.jpg"
+   }
+  ],
+  "Filipenses": [
+   {
+    "arquivo": "img/livros/filipenses-1.jpg",
+    "titulo": "São Paulo na prisão",
+    "artista": "Rembrandt",
+    "ano": "1627",
+    "ref": "Filipenses 1:13",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt,_%22St._Paul_in_Prison%22.jpg"
+   },
+   {
+    "arquivo": "img/livros/filipenses-2.jpg",
+    "titulo": "São Paulo à escrivaninha",
+    "artista": "Rembrandt",
+    "ano": "c. 1629–30",
+    "ref": "Filipenses",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Saint_Paul_at_his_Writing-Desk,_by_Rembrandt.jpg"
+   },
+   {
+    "arquivo": "img/livros/filipenses-3.jpg",
+    "titulo": "Os Quatro Apóstolos",
+    "artista": "Albrecht Dürer",
+    "ano": "1526",
+    "ref": "Filipenses",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_The_Four_Apostles,_Saints_John,_Peter,_Mark_and_Paul.jpg"
+   }
+  ],
+  "Colossenses": [
+   {
+    "arquivo": "img/livros/colossenses-1.jpg",
+    "titulo": "São Paulo",
+    "artista": "El Greco",
+    "ano": "c. 1610",
+    "ref": "Colossenses",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Saint_Paul,_detail._El_Greco_Museum,_Toledo._Spain.jpg",
+    "credito": "Foto: Ввласенко, CC BY-SA 3.0"
+   },
+   {
+    "arquivo": "img/livros/colossenses-2.jpg",
+    "titulo": "Paulo e Barnabé em Listra",
+    "artista": "Rafael",
+    "ano": "1515",
+    "ref": "Atos 14",
+    "fonte": "https://commons.wikimedia.org/wiki/File:V%26A_-_Raphael,_The_Sacrifice_at_Lystra_(1515).jpg"
+   },
+   {
+    "arquivo": "img/livros/colossenses-3.jpg",
+    "titulo": "São Paulo",
+    "artista": "James Tissot",
+    "ano": "c. 1886–94",
+    "ref": "Colossenses",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Saint_Paul_-_James_Tissot_-_overall.jpg"
+   }
+  ],
+  "1 Tessalonicenses": [
+   {
+    "arquivo": "img/livros/1-tessalonicenses-1.jpg",
+    "titulo": "Paulo escreve aos tessalonicenses",
+    "artista": "Jan Lievens",
+    "ano": "c. 1627–29",
+    "ref": "1 Tessalonicenses",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Jan_Lievens_-_St._Paul_writing_to_the_Thessalonians.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-tessalonicenses-2.jpg",
+    "titulo": "O Juízo Final",
+    "artista": "Michelangelo",
+    "ano": "1536–41",
+    "ref": "1 Tessalonicenses 4:16",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Last_Judgement_(Michelangelo).jpg"
+   },
+   {
+    "arquivo": "img/livros/1-tessalonicenses-3.jpg",
+    "titulo": "O Juízo Final",
+    "artista": "John Martin",
+    "ano": "1853",
+    "ref": "1 Tessalonicenses 4:17",
+    "fonte": "https://commons.wikimedia.org/wiki/File:John_Martin_-_The_Last_Judgement_-_Google_Art_Project.jpg"
+   }
+  ],
+  "2 Tessalonicenses": [
+   {
+    "arquivo": "img/livros/2-tessalonicenses-1.jpg",
+    "titulo": "São Paulo escrevendo suas cartas",
+    "artista": "atribuído a Valentin de Boulogne",
+    "ano": "séc. XVII",
+    "ref": "2 Tessalonicenses",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Probably_Valentin_de_Boulogne_-_Saint_Paul_Writing_His_Epistles_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-tessalonicenses-2.jpg",
+    "titulo": "O Juízo Final (detalhe)",
+    "artista": "Fra Angelico",
+    "ano": "c. 1431",
+    "ref": "2 Tessalonicenses 1:7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Fra_Angelico_-_Last_Judgement_(detail)_-_WGA00469.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-tessalonicenses-3.jpg",
+    "titulo": "São Paulo",
+    "artista": "James Tissot",
+    "ano": "c. 1886–94",
+    "ref": "2 Tessalonicenses",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Saint_Paul_-_James_Tissot_-_overall.jpg"
+   }
+  ],
+  "1 Timóteo": [
+   {
+    "arquivo": "img/livros/1-timoteo-1.jpg",
+    "titulo": "São Paulo",
+    "artista": "Lucas van Leyden",
+    "ano": "séc. XVI",
+    "ref": "2 Tessalonicenses",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Lucas_van_Leyden_-_Saint_Paul_-_1961.52_-_Yale_University_Art_Gallery.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-timoteo-2.jpg",
+    "titulo": "A conversão de Paulo",
+    "artista": "Pieter Bruegel, o Velho",
+    "ano": "1567",
+    "ref": "1 Timóteo 1:13",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Conversion_of_Paul_(Bruegel).jpg"
+   },
+   {
+    "arquivo": "img/livros/1-timoteo-3.jpg",
+    "titulo": "São Paulo",
+    "artista": "Hans Memling",
+    "ano": "séc. XV",
+    "ref": "1 Timóteo",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Saint_Paul_with_Paolo_Pagagnotti;_Christ_Appearing_to_His_Mother_MET_DT262309.jpg"
+   }
+  ],
+  "2 Timóteo": [
+   {
+    "arquivo": "img/livros/2-timoteo-1.jpg",
+    "titulo": "Timóteo e sua avó Loide",
+    "artista": "Rembrandt",
+    "ano": "1648",
+    "ref": "2 Timóteo 1:5",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Timothy-and-Lois.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-timoteo-2.jpg",
+    "titulo": "São Paulo",
+    "artista": "círculo de Lucas van Leyden",
+    "ano": "c. 1525",
+    "ref": "2 Timóteo 4:7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Circle_of_Lucas_van_Leyden_-_Saint_Paul,_ca._1525,_14_(1981.5).jpg"
+   },
+   {
+    "arquivo": "img/livros/2-timoteo-3.jpg",
+    "titulo": "São Paulo",
+    "artista": "El Greco",
+    "ano": "séc. XVI",
+    "ref": "2 Timóteo",
+    "fonte": "https://commons.wikimedia.org/wiki/File:El_Greco_-_Saint_Paul,_Frati_131J.jpg"
+   }
+  ],
+  "Tito": [
+   {
+    "arquivo": "img/livros/tito-1.jpg",
+    "titulo": "A conversão de São Paulo",
+    "artista": "Lucas van Leyden",
+    "ano": "1509",
+    "ref": "Tito 3:3",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Lucas_van_Leyden,_The_Conversion_of_Saint_Paul,_1509,_NGA_34640.jpg"
+   },
+   {
+    "arquivo": "img/livros/tito-2.jpg",
+    "titulo": "Ananias restaura a visão de Paulo",
+    "artista": "autor desconhecido",
+    "ano": "",
+    "ref": "Atos 9:17",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Saint_Paul_Ananias_Sight_Restored.jpg"
+   },
+   {
+    "arquivo": "img/livros/tito-3.jpg",
+    "titulo": "São Paulo",
+    "artista": "James Tissot",
+    "ano": "c. 1886–94",
+    "ref": "Tito",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Saint_Paul_-_James_Tissot_-_overall.jpg"
+   }
+  ],
+  "Filemom": [
+   {
+    "arquivo": "img/livros/filemom-1.jpg",
+    "titulo": "São Paulo na prisão",
+    "artista": "Rembrandt",
+    "ano": "1627",
+    "ref": "Filemom 1:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt,_%22St._Paul_in_Prison%22.jpg"
+   },
+   {
+    "arquivo": "img/livros/filemom-2.jpg",
+    "titulo": "São Paulo",
+    "artista": "Hans Memling",
+    "ano": "séc. XV",
+    "ref": "Filemom",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Saint_Paul_with_Paolo_Pagagnotti;_Christ_Appearing_to_His_Mother_MET_DT262309.jpg"
+   },
+   {
+    "arquivo": "img/livros/filemom-3.jpg",
+    "titulo": "São Paulo escrevendo suas cartas",
+    "artista": "atribuído a Valentin de Boulogne",
+    "ano": "séc. XVII",
+    "ref": "Filemom",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Probably_Valentin_de_Boulogne_-_Saint_Paul_Writing_His_Epistles_-_Google_Art_Project.jpg"
+   }
+  ],
+  "Hebreus": [
+   {
+    "arquivo": "img/livros/hebreus-1.jpg",
+    "titulo": "O encontro de Abraão e Melquisedeque",
+    "artista": "Peter Paul Rubens",
+    "ano": "c. 1625",
+    "ref": "Hebreus 7",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_Meeting_of_Abraham_and_Melchizedek_-_WGA20435.jpg"
+   },
+   {
+    "arquivo": "img/livros/hebreus-2.jpg",
+    "titulo": "Abraão parte para Canaã",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Hebreus 11:8",
+    "fonte": "https://commons.wikimedia.org/wiki/File:011.Abraham_Goes_to_the_Land_of_Canaan.jpg"
+   },
+   {
+    "arquivo": "img/livros/hebreus-3.jpg",
+    "titulo": "A prova da fé de Abraão",
+    "artista": "Gustave Doré",
+    "ano": "1866",
+    "ref": "Hebreus 11:17",
+    "fonte": "https://commons.wikimedia.org/wiki/File:016.The_Testing_of_Abraham%27s_Faith.jpg"
+   }
+  ],
+  "Tiago": [
+   {
+    "arquivo": "img/livros/tiago-1.jpg",
+    "titulo": "São Tiago Menor",
+    "artista": "El Greco",
+    "ano": "c. 1610",
+    "ref": "Tiago 1:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:El_Greco_-_Saint_James_the_Younger_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/tiago-2.jpg",
+    "titulo": "São Tiago Menor",
+    "artista": "Jusepe de Ribera",
+    "ano": "1630–35",
+    "ref": "Tiago",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Ribera_-_Santiago_el_Menor,_P001089.jpg"
+   },
+   {
+    "arquivo": "img/livros/tiago-3.jpg",
+    "titulo": "São Tiago Menor",
+    "artista": "Georges de La Tour",
+    "ano": "c. 1620",
+    "ref": "Tiago",
+    "fonte": "https://commons.wikimedia.org/wiki/File:(Albi)_Saint_Jacques_le_Mineur_1620_-_Georges_de_La_Tour_Inv.169.jpg"
+   }
+  ],
+  "1 Pedro": [
+   {
+    "arquivo": "img/livros/1-pedro-1.jpg",
+    "titulo": "As lágrimas de São Pedro",
+    "artista": "El Greco",
+    "ano": "c. 1600",
+    "ref": "1 Pedro",
+    "fonte": "https://commons.wikimedia.org/wiki/File:El_Greco_-_Saint_Peter_in_Tears_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-pedro-2.jpg",
+    "titulo": "A negação de Pedro",
+    "artista": "Rembrandt",
+    "ano": "1660",
+    "ref": "Lucas 22:61",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_The-denial-of-peter-1660.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-pedro-3.jpg",
+    "titulo": "São Pedro",
+    "artista": "James Tissot",
+    "ano": "c. 1886–94",
+    "ref": "1 Pedro 1:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Saint_Peter_(Saint_Pierre)_-_James_Tissot.jpg"
+   }
+  ],
+  "2 Pedro": [
+   {
+    "arquivo": "img/livros/2-pedro-1.jpg",
+    "titulo": "A crucificação de São Pedro",
+    "artista": "Caravaggio",
+    "ano": "1601",
+    "ref": "2 Pedro 1:14",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Crucifixion_of_Saint_Peter-Caravaggio_(c.1600).jpg"
+   },
+   {
+    "arquivo": "img/livros/2-pedro-2.jpg",
+    "titulo": "São Pedro na prisão",
+    "artista": "Rembrandt",
+    "ano": "1631",
+    "ref": "2 Pedro",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_St._Peter_in_Prison_(The_Apostle_Peter_Kneeling)_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-pedro-3.jpg",
+    "titulo": "Apascenta as minhas ovelhas",
+    "artista": "Rafael",
+    "ano": "1515",
+    "ref": "João 21:17",
+    "fonte": "https://commons.wikimedia.org/wiki/File:V%26A_-_Raphael,_Christ%27s_Charge_to_Peter_(1515).jpg"
+   }
+  ],
+  "1 João": [
+   {
+    "arquivo": "img/livros/1-joao-1.jpg",
+    "titulo": "São João",
+    "artista": "El Greco",
+    "ano": "c. 1600",
+    "ref": "1 João",
+    "fonte": "https://commons.wikimedia.org/wiki/File:El_Greco_-_St._John_-_1964.45.FA_-_Dallas_Museum_of_Art.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-joao-2.jpg",
+    "titulo": "São João Evangelista",
+    "artista": "Domenichino",
+    "ano": "c. 1621–29",
+    "ref": "1 João",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Zampieri_St_John_Evangelist.jpg"
+   },
+   {
+    "arquivo": "img/livros/1-joao-3.jpg",
+    "titulo": "São João Evangelista",
+    "artista": "James Tissot",
+    "ano": "c. 1886–94",
+    "ref": "1 João",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Saint_John_the_Evangelist_(Saint_Jean_l%27%C3%89vangeliste)_-_James_Tissot_-_overall.jpg"
+   }
+  ],
+  "2 João": [
+   {
+    "arquivo": "img/livros/2-joao-1.jpg",
+    "titulo": "São João Evangelista",
+    "artista": "Francisco de Zurbarán",
+    "ano": "séc. XVII",
+    "ref": "2 João",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_S%C3%A3o_Jo%C3%A3o_Evangelista.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-joao-2.jpg",
+    "titulo": "O evangelista João",
+    "artista": "Guercino",
+    "ano": "c. 1615",
+    "ref": "2 João",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Guercino_-_Der_Evangelist_Johannes,_Um_1615.jpg"
+   },
+   {
+    "arquivo": "img/livros/2-joao-3.jpg",
+    "titulo": "O apóstolo João",
+    "artista": "Peter Paul Rubens",
+    "ano": "c. 1611",
+    "ref": "2 João",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Rubens_apostel_johannes_grt.jpg"
+   }
+  ],
+  "3 João": [
+   {
+    "arquivo": "img/livros/3-joao-1.jpg",
+    "titulo": "São João Evangelista",
+    "artista": "El Greco",
+    "ano": "séc. XVI",
+    "ref": "3 João",
+    "fonte": "https://commons.wikimedia.org/wiki/File:El_Greco_-_Saint_John_the_Evangelist,_Henke_Collection.jpg"
+   },
+   {
+    "arquivo": "img/livros/3-joao-2.jpg",
+    "titulo": "São João em Patmos",
+    "artista": "Diego Velázquez",
+    "ano": "c. 1618",
+    "ref": "Apocalipse 1:9",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_St_John_the_Evangelist_at_Patmos_-_WGA24356.jpg"
+   },
+   {
+    "arquivo": "img/livros/3-joao-3.jpg",
+    "titulo": "A Transfiguração",
+    "artista": "Rafael",
+    "ano": "1516–20",
+    "ref": "Mateus 17",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Transfiguration_Raphael.jpg"
+   }
+  ],
+  "Judas": [
+   {
+    "arquivo": "img/livros/judas-1.jpg",
+    "titulo": "São Judas Tadeu",
+    "artista": "El Greco",
+    "ano": "c. 1610",
+    "ref": "Judas 1:1",
+    "fonte": "https://commons.wikimedia.org/wiki/File:El_Greco_-_St._Jude_Thaddeus_-_Google_Art_Project.jpg"
+   },
+   {
+    "arquivo": "img/livros/judas-2.jpg",
+    "titulo": "São Judas Tadeu",
+    "artista": "James Tissot",
+    "ano": "c. 1886–94",
+    "ref": "Judas",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Saint_Thaddeus_or_Saint_Jude_(Saint_Thad%C3%A9e_ou_Saint_Jude)_-_James_Tissot_-_overall.jpg"
+   },
+   {
+    "arquivo": "img/livros/judas-3.jpg",
+    "titulo": "São Judas Tadeu",
+    "artista": "Georges de La Tour",
+    "ano": "c. 1620",
+    "ref": "Judas",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Stjudethaddeus.JPG"
+   }
+  ],
+  "Apocalipse": [
+   {
+    "arquivo": "img/livros/apocalipse-1.jpg",
+    "titulo": "São João em Patmos",
+    "artista": "Hieronymus Bosch",
+    "ano": "c. 1489",
+    "ref": "Apocalipse 1:9",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Johannes_op_Patmos_Saint_John_on_Patmos_Berlin,_Staatlichen_Museen_zu_Berlin,_Gemaldegalerie_HR.jpg"
+   },
+   {
+    "arquivo": "img/livros/apocalipse-2.jpg",
+    "titulo": "Os Quatro Cavaleiros",
+    "artista": "Albrecht Dürer",
+    "ano": "1498",
+    "ref": "Apocalipse 6",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_The_Four_Horsemen,_1498,_NGA_142352.jpg"
+   },
+   {
+    "arquivo": "img/livros/apocalipse-3.jpg",
+    "titulo": "A Morte no cavalo amarelo",
+    "artista": "Gustave Doré",
+    "ano": "1865",
+    "ref": "Apocalipse 6:8",
+    "fonte": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Death_on_the_Pale_Horse_(1865).jpg"
+   }
+  ]
+ }
 }
