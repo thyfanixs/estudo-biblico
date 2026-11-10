@@ -1,0 +1,184 @@
+{
+  "estudos": [
+    {
+      "livro": "Gênesis",
+      "de": 1,
+      "ate": 1,
+      "arquivo": "estudos/genesis/gn-01.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 2,
+      "ate": 2,
+      "arquivo": "estudos/genesis/gn-02.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 3,
+      "ate": 3,
+      "arquivo": "estudos/genesis/gn-03.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 4,
+      "ate": 4,
+      "arquivo": "estudos/genesis/gn-04.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 5,
+      "ate": 7,
+      "arquivo": "estudos/genesis/gn-05-07.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 8,
+      "ate": 10,
+      "arquivo": "estudos/genesis/gn-08-10.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 11,
+      "ate": 11,
+      "arquivo": "estudos/genesis/gn-11.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 12,
+      "ate": 12,
+      "arquivo": "estudos/genesis/gn-12.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 13,
+      "ate": 14,
+      "arquivo": "estudos/genesis/gn-13-14.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 15,
+      "ate": 15,
+      "arquivo": "estudos/genesis/gn-15.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 16,
+      "ate": 17,
+      "arquivo": "estudos/genesis/gn-16-17.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 17,
+      "ate": 17,
+      "arquivo": "estudos/genesis/gn-17.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 18,
+      "ate": 18,
+      "arquivo": "estudos/genesis/gn-18.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 19,
+      "ate": 19,
+      "arquivo": "estudos/genesis/gn-19.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 20,
+      "ate": 20,
+      "arquivo": "estudos/genesis/gn-20.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 21,
+      "ate": 21,
+      "arquivo": "estudos/genesis/gn-21.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 22,
+      "ate": 22,
+      "arquivo": "estudos/genesis/gn-22.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 23,
+      "ate": 23,
+      "arquivo": "estudos/genesis/gn-23.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 24,
+      "ate": 24,
+      "arquivo": "estudos/genesis/gn-24.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 25,
+      "ate": 25,
+      "arquivo": "estudos/genesis/gn-25.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 26,
+      "ate": 26,
+      "arquivo": "estudos/genesis/gn-26.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 27,
+      "ate": 27,
+      "arquivo": "estudos/genesis/gn-27.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 28,
+      "ate": 28,
+      "arquivo": "estudos/genesis/gn-28.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 29,
+      "ate": 29,
+      "arquivo": "estudos/genesis/gn-29.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 30,
+      "ate": 30,
+      "arquivo": "estudos/genesis/gn-30.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 31,
+      "ate": 31,
+      "arquivo": "estudos/genesis/gn-31.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 32,
+      "ate": 32,
+      "arquivo": "estudos/genesis/gn-32.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 33,
+      "ate": 33,
+      "arquivo": "estudos/genesis/gn-33.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 34,
+      "ate": 34,
+      "arquivo": "estudos/genesis/gn-34.pdf"
+    },
+    {
+      "livro": "Gênesis",
+      "de": 35,
+      "ate": 36,
+      "arquivo": "estudos/genesis/gn-35-36.pdf"
+    }
+  ]
+}

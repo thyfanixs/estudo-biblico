@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Até Apocalipse 22</title>
+<meta name="description" content="Estudo bíblico de segunda-feira: contagem regressiva até o último capítulo da Bíblia.">
+<meta name="theme-color" content="#0a0807">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0807'/%3E%3Cpath d='M14 4h4v8h8v4h-8v12h-4V16H6v-4h8z' fill='%23c9a45c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* Catedral à noite: nave de pedra escura, janelas em arco ogival com gravuras bíblicas,
+   luz de vela em ouro velho, vermelho de lacre para o "estamos aqui". */
+:root{
+  --stone:#0a0807;      /* fundo, pedra sem luz */
+  --vault:#14100d;      /* superfícies, abóbada */
+  --iron:#2b241e;       /* filetes, ferro forjado */
+  --ash:#8d8172;        /* texto secundário */
+  --parchment:#ebe1cb;  /* texto, pergaminho */
+  --gold:#c9a45c;       /* ouro velho */
+  --gold-dim:rgba(201,164,92,.16);
+  --wax:#8e1f1a;        /* lacre / veludo */
+  --wax-glow:rgba(176,40,30,.35);
+  --f-black:"UnifrakturCook","Old English Text MT",Georgia,serif;
+  --f-cap:"Cinzel","Trajan Pro",Georgia,serif;
+  --f-num:"Cormorant Garamond",Garamond,Georgia,serif;
+  --f-body:"EB Garamond",Garamond,Georgia,serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--stone)}
+body{margin:0;background:var(--stone);color:var(--parchment);font-family:var(--f-body);font-size:18px;line-height:1.6;overflow-x:hidden;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+#embers{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding-block:32px 72px;
+  padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:88px}
+
+.cap{font-family:var(--f-cap);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--ash)}
+.cap b{color:var(--gold);font-weight:500}
+.rule{display:flex;align-items:center;gap:18px;color:var(--gold);font-size:16px}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--iron) 20%,var(--iron) 80%,transparent)}
+
+/* gothic arch window */
+.arch{position:relative;aspect-ratio:3/4.4;max-width:100%;border-radius:50% 50% 0 0 / 34% 34% 0 0;overflow:hidden;
+  border:1px solid var(--iron);box-shadow:0 0 0 6px var(--stone),0 0 0 7px var(--iron),0 30px 80px rgba(0,0,0,.7)}
+.arch img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) sepia(.35) brightness(.72) contrast(1.15)}
+.arch::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,transparent 30%,rgba(10,8,7,.85) 100%),linear-gradient(180deg,transparent 60%,rgba(10,8,7,.9))}
+.arch .mullion{position:absolute;inset:0;z-index:1;pointer-events:none}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:center}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:40px}.hero .arch{width:100%;max-width:520px;margin:0 auto;aspect-ratio:16/10;border-radius:50% 50% 0 0 / 60% 60% 0 0}}
+.hero-text{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero h1{margin:0;font-family:var(--f-black);font-weight:700;font-size:clamp(46px,7.4vw,92px);line-height:.95;color:var(--parchment);text-wrap:balance;
+  text-shadow:0 2px 0 #000,0 0 40px rgba(201,164,92,.18)}
+.hero h1 span{color:var(--gold)}
+.count{display:flex;align-items:flex-end;gap:clamp(12px,2.6vw,30px);flex-wrap:wrap;font-variant-numeric:lining-nums tabular-nums}
+.unit{display:flex;flex-direction:column;gap:2px}
+.unit .n{font-family:var(--f-num);font-weight:300;line-height:.86;color:var(--parchment)}
+.unit.big .n{font-size:clamp(64px,10.5vw,160px);color:var(--gold);text-shadow:0 0 50px rgba(201,164,92,.28)}
+.unit .n.s{font-size:clamp(28px,4.2vw,60px)}
+.unit .l{font-family:var(--f-cap);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ash)}
+.colon{font-family:var(--f-num);font-weight:300;font-size:clamp(30px,4.4vw,52px);color:var(--iron);padding-bottom:20px}
+.enddate{margin:0;font-family:var(--f-cap);font-weight:400;font-size:clamp(19px,2.5vw,26px);letter-spacing:.05em;line-height:1.3;text-wrap:balance}
+.enddate small{display:block;font-family:var(--f-body);font-style:italic;font-size:17px;letter-spacing:0;color:var(--ash);margin-top:6px}
+.verse{margin:0;font-family:var(--f-num);font-style:italic;font-size:20px;color:var(--ash);max-width:46ch}
+.verse cite{font-style:normal;font-family:var(--f-cap);font-size:11px;letter-spacing:.2em;margin-left:6px;color:var(--gold)}
+
+/* TIMELINE */
+.track{display:flex;flex-direction:column;gap:18px}
+.ends{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.ref{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ref.right{text-align:right;align-items:flex-end}
+.ref .v{font-family:var(--f-cap);font-weight:500;font-size:clamp(22px,4vw,38px);line-height:1.1}
+.ref.now .v{color:var(--gold)}
+.bar{position:relative;height:3px;background:var(--iron);border-radius:2px}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,rgba(201,164,92,.2),var(--gold));border-radius:2px;transition:width 1s cubic-bezier(.2,.7,.2,1)}
+.bar .dot{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;transform:rotate(45deg);background:var(--wax);border:1px solid var(--gold);box-shadow:0 0 0 5px var(--wax-glow),0 0 26px var(--wax);transition:left 1s cubic-bezier(.2,.7,.2,1)}
+.bar .ot{position:absolute;top:-6px;width:1px;height:15px;background:var(--ash)}
+.ticks{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--f-cap);font-size:12px;letter-spacing:.12em;color:var(--ash);font-variant-numeric:lining-nums}
+
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--iron);border-bottom:1px solid var(--iron)}
+.stat{padding:22px 18px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat+.stat{border-left:1px solid var(--iron)}
+.stat .v{font-family:var(--f-num);font-size:clamp(28px,3.6vw,40px);line-height:1.1;font-variant-numeric:lining-nums tabular-nums}
+.stat .k{font-size:15px;color:var(--ash)}
+@media (max-width:720px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--iron)}}
+
+/* section heads */
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.sh h2{margin:0;font-family:var(--f-cap);font-weight:500;font-size:clamp(28px,4.4vw,44px);line-height:1.05;letter-spacing:.04em}
+.sh h2 small{display:block;margin-bottom:10px}
+.sh p{margin:0;max-width:46ch;color:var(--ash);font-size:16px}
+
+/* NEXT STUDY */
+.next{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:28px;border:1px solid var(--iron);
+  background:linear-gradient(135deg,rgba(142,31,26,.12),transparent 60%),var(--vault)}
+@media (max-width:640px){.next{grid-template-columns:1fr}}
+.next .when{font-family:var(--f-cap);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.next .what{font-family:var(--f-cap);font-size:clamp(26px,4vw,40px);line-height:1.1;margin-top:6px}
+.btn{font:inherit;font-family:var(--f-cap);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:14px 22px;border:1px solid var(--gold);
+  color:var(--gold);background:transparent;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:background .2s,color .2s}
+.btn:hover{background:var(--gold);color:var(--stone)}
+.btn.solid{background:var(--gold);color:var(--stone)}
+.btn.solid:hover{background:var(--parchment)}
+.btn.quiet{border-color:var(--iron);color:var(--parchment)}
+.btn.quiet:hover{background:var(--iron);color:var(--parchment)}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+:is(.btn,a,select,input,.cell,.book):focus-visible{outline:1px solid var(--gold);outline-offset:3px}
+
+/* CHAPTERS */
+.chapters{display:flex;flex-direction:column;gap:22px}
+.picker{display:flex;flex-direction:column;gap:6px;width:min(260px,100%)}
+.picker label,.field label{font-family:var(--f-cap);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ash)}
+select,input{font:inherit;font-size:17px;color:var(--parchment);background:var(--stone);border:1px solid var(--iron);padding:10px 12px;width:100%;min-width:0;border-radius:0}
+.chgrid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
+@media (max-width:640px){.chgrid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.cell{position:relative;aspect-ratio:1;display:flex;align-items:center;justify-content:center;border:1px solid var(--iron);background:var(--vault);
+  font-family:var(--f-num);font-size:clamp(17px,2.2vw,24px);font-variant-numeric:lining-nums;color:var(--ash);text-decoration:none;transition:border-color .2s,background .2s,color .2s}
+.cell.read{background:linear-gradient(160deg,rgba(201,164,92,.16),rgba(201,164,92,.05));border-color:rgba(201,164,92,.38);color:var(--gold)}
+.cell.now{border-color:var(--wax);color:var(--parchment);background:radial-gradient(circle,rgba(142,31,26,.45),rgba(142,31,26,.12));box-shadow:0 0 24px var(--wax-glow)}
+.cell.now::after{content:"";position:absolute;inset:-1px;border:1px solid var(--gold);animation:pulse 2.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.9}50%{opacity:.1}}
+a.cell:hover{border-color:var(--gold);color:var(--parchment);background:rgba(201,164,92,.24)}
+.cell svg{position:absolute;top:5px;right:5px;width:10px;height:12px;opacity:.85}
+.chsum{display:flex;gap:28px;flex-wrap:wrap;color:var(--ash);font-size:16px}
+.chsum b{font-family:var(--f-num);font-size:22px;font-weight:500;color:var(--parchment)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:15px;color:var(--ash);align-items:center}
+.legend i{display:inline-block;width:12px;height:12px;margin-right:7px;vertical-align:-1px;border:1px solid var(--iron);background:var(--vault)}
+.legend .l-read{background:rgba(201,164,92,.25);border-color:var(--gold)}
+.legend .l-now{background:var(--wax);border-color:var(--gold)}
+.legend svg{width:10px;height:12px;margin-right:7px;vertical-align:-1px;color:var(--gold)}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+@media (max-width:820px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery figure:last-child{display:none}}
+@media (max-width:520px){.gallery{grid-template-columns:1fr}.gallery figure:last-child{display:flex}}
+figure{margin:0;display:flex;flex-direction:column;gap:14px;min-width:0}
+figcaption{display:flex;flex-direction:column;gap:2px;text-align:center}
+figcaption .t{font-family:var(--f-cap);font-size:17px;letter-spacing:.04em}
+figcaption .a{font-style:italic;color:var(--ash);font-size:15px}
+figcaption .r{font-family:var(--f-cap);font-size:11px;letter-spacing:.22em;color:var(--gold)}
+
+/* BOOKS */
+.testament{display:flex;flex-direction:column;gap:12px}
+.testament .t{display:flex;justify-content:space-between;gap:12px}
+.books{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:6px}
+.book{position:relative;font:inherit;text-align:left;background:var(--vault);border:1px solid var(--iron);padding:10px 10px 12px;color:var(--ash);
+  display:flex;flex-direction:column;gap:0;overflow:hidden;cursor:pointer;transition:border-color .2s,color .2s}
+.book:hover{border-color:var(--ash);color:var(--parchment)}
+.book .ab{font-family:var(--f-cap);font-size:16px;font-weight:500;color:inherit}
+.book .ch{font-size:13px}
+.book .p{position:absolute;left:0;bottom:0;height:2px;background:var(--gold)}
+.book.done{border-color:rgba(201,164,92,.38);color:var(--gold);background:rgba(201,164,92,.07)}
+.book.done .p{width:100%;opacity:.5}
+.book.now{border-color:var(--wax);color:var(--parchment);box-shadow:0 0 18px var(--wax-glow)}
+.book.now .ab{color:var(--gold)}
+
+/* DESTINATION */
+.dest{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:56px;align-items:center}
+@media (max-width:820px){.dest{grid-template-columns:1fr}.dest .arch{max-width:320px;margin:0 auto}}
+.dest blockquote{margin:0;font-family:var(--f-num);font-style:italic;font-weight:400;font-size:clamp(24px,3.2vw,34px);line-height:1.35;text-wrap:balance}
+.dest blockquote cite{display:block;margin-top:16px;font-style:normal;font-family:var(--f-cap);font-size:13px;letter-spacing:.24em;color:var(--gold)}
+.dest p{color:var(--ash);font-size:17px;max-width:52ch}
+
+/* ORGANIZER */
+.org{border:1px solid var(--wax);background:var(--vault);padding:28px;display:flex;flex-direction:column;gap:22px}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.org p{margin:0;color:var(--ash);font-size:16px}
+.org code{font-family:ui-monospace,Menlo,monospace;font-size:14px;color:var(--parchment)}
+.status{font-family:var(--f-cap);font-size:12px;letter-spacing:.14em;color:var(--gold);min-height:1em}
+
+footer{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;color:var(--ash);font-size:14px}
+footer a{color:var(--ash)}
+.done-msg{font-family:var(--f-black);font-size:clamp(40px,7vw,80px);color:var(--gold)}
+
+@media (prefers-reduced-motion:reduce){.cell.now::after{animation:none}.bar .fill,.bar .dot{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="embers" aria-hidden="true"></canvas>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="scroll" viewBox="0 0 10 12"><path d="M1 1h6l2 2v8H1z" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M3 5h4M3 7h4M3 9h3" stroke="currentColor" stroke-width=".9"/></symbol>
+</svg>
+
+<main class="wrap">
+
+  <section class="hero" aria-live="polite">
+    <div class="hero-text">
+      <div class="cap">Estudo bíblico · toda <b>segunda-feira</b> · <b id="hero-time">19h40</b></div>
+      <h1>Até <span>Apocalipse</span> 22</h1>
+      <div class="count">
+        <div class="unit big"><span class="n" id="cd-d">—</span><span class="l">dias</span></div>
+        <div class="unit"><span class="n s" id="cd-h">00</span><span class="l">horas</span></div>
+        <span class="colon">:</span>
+        <div class="unit"><span class="n s" id="cd-m">00</span><span class="l">min</span></div>
+        <span class="colon">:</span>
+        <div class="unit"><span class="n s" id="cd-s">00</span><span class="l">seg</span></div>
+      </div>
+      <p class="enddate" id="enddate">Calculando a última segunda-feira…</p>
+      <p class="verse">“Lâmpada para os meus pés é tua palavra, e luz para o meu caminho.”<cite>Sl 119:105</cite></p>
+    </div>
+    <div class="arch">
+      <img src="img/criacao.jpg" alt="Gravura de Gustave Doré: a criação da luz rompendo as nuvens" width="1111" height="1400">
+      <svg class="mullion" viewBox="0 0 300 440" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0V440M0 170H300" stroke="rgba(10,8,7,.55)" stroke-width="3" fill="none"/></svg>
+    </div>
+  </section>
+
+  <section class="track" aria-label="Caminho de Gênesis 1 a Apocalipse 22">
+    <div class="ends">
+      <div class="ref now"><span class="cap">Estamos em</span><span class="v" id="now-ref">Gênesis 35</span></div>
+      <div class="ref right"><span class="cap">Último capítulo</span><span class="v">Apocalipse 22</span></div>
+    </div>
+    <div class="bar"><div class="fill" id="fill"></div><div class="ot" id="ot" title="Fim do Antigo Testamento (Malaquias 4)"></div><div class="dot" id="dot"></div></div>
+    <div class="ticks"><span id="pct">—</span><span>Antigo │ Novo Testamento</span><span id="left">—</span></div>
+  </section>
+
+  <section class="stats" aria-label="Resumo">
+    <div class="stat"><span class="v" id="st-studies">—</span><span class="k">estudos pela frente</span></div>
+    <div class="stat"><span class="v" id="st-years">—</span><span class="k">anos de caminhada</span></div>
+    <div class="stat"><span class="v" id="st-book">—</span><span class="k" id="st-book-k">fim do livro atual</span></div>
+    <div class="stat"><span class="v" id="st-pdfs">—</span><span class="k">estudos guardados em PDF</span></div>
+  </section>
+
+  <section class="next" aria-label="Próximo estudo">
+    <div><div class="when" id="next-when">—</div><div class="what" id="next-what">—</div></div>
+    <a class="btn" id="next-pdf" href="#" target="_blank" rel="noopener" hidden><svg width="10" height="12"><use href="#scroll"/></svg>Abrir o estudo</a>
+  </section>
+
+  <section class="chapters" aria-label="Capítulo a capítulo">
+    <div class="sh">
+      <h2 id="ch-title"><small class="cap">Capítulo a capítulo</small><span>Gênesis</span></h2>
+      <div class="picker"><label for="f-view">Ver o livro</label><select id="f-view"></select></div>
+    </div>
+    <div class="chgrid" id="chgrid"></div>
+    <div class="chsum" id="chsum"></div>
+    <div class="legend"><span><i class="l-read"></i>estudado</span><span><i class="l-now"></i>próximo estudo</span><span><i></i>pela frente</span><span><svg><use href="#scroll"/></svg>tem PDF: toque para abrir</span></div>
+  </section>
+
+  <div class="rule" aria-hidden="true">✠</div>
+
+  <section class="gallery-sec" aria-label="Galeria">
+    <div class="sh" style="margin-bottom:36px">
+      <h2><small class="cap">Galeria</small>Cenas do caminho</h2>
+      <p>Gravuras e pinturas clássicas dos capítulos que já estudamos.</p>
+    </div>
+    <div class="gallery">
+      <figure><div class="arch"><img src="img/diluvio.jpg" alt="O Dilúvio, gravura de Gustave Doré" loading="lazy" width="1074" height="1400"></div>
+        <figcaption><span class="t">O Dilúvio</span><span class="a">Gustave Doré, 1866</span><span class="r">Gênesis 7</span></figcaption></figure>
+      <figure><div class="arch"><img src="img/isaque.jpg" alt="O Sacrifício de Isaque, pintura de Rembrandt" loading="lazy" width="964" height="1400"></div>
+        <figcaption><span class="t">O Sacrifício de Isaque</span><span class="a">Rembrandt, 1635</span><span class="r">Gênesis 22</span></figcaption></figure>
+      <figure><div class="arch"><img src="img/jaco.jpg" alt="Jacó lutando com o anjo, gravura de Gustave Doré" loading="lazy" width="1138" height="1400"></div>
+        <figcaption><span class="t">Jacó luta com o anjo</span><span class="a">Gustave Doré, 1866</span><span class="r">Gênesis 32</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="books-sec" aria-label="Os 66 livros">
+    <div class="sh" style="margin-bottom:28px">
+      <h2><small class="cap">A Bíblia inteira</small>Os 66 livros</h2>
+      <div class="legend"><span><i class="l-read"></i>concluído</span><span><i class="l-now"></i>estamos aqui</span><span><i></i>pela frente</span></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div class="testament"><div class="t"><span class="cap">Antigo Testamento</span><span class="cap">39 livros · 929 cap.</span></div><div class="books" id="ot-books"></div></div>
+      <div class="testament"><div class="t"><span class="cap">Novo Testamento</span><span class="cap">27 livros · 260 cap.</span></div><div class="books" id="nt-books"></div></div>
+    </div>
+  </section>
+
+  <section class="dest" aria-label="O destino">
+    <div class="arch"><img src="img/nova-jerusalem.jpg" alt="A Nova Jerusalém, gravura de Gustave Doré" loading="lazy" width="750" height="930"></div>
+    <div style="display:flex;flex-direction:column;gap:22px;min-width:0">
+      <span class="cap">O destino</span>
+      <blockquote>“Eis que cedo venho. Bem-aventurado aquele que guarda as palavras da profecia deste livro.”<cite>Apocalipse 22:7</cite></blockquote>
+      <p id="dest-p">Uma segunda-feira de cada vez, até o último versículo.</p>
+    </div>
+  </section>
+
+  <section class="org" id="org" hidden aria-label="Área do organizador">
+    <div class="sh"><h2 style="font-size:28px"><small class="cap">Área do organizador</small>Atualizar o progresso</h2></div>
+    <p>As mudanças aqui aparecem só neste aparelho. Para todos verem, baixe o <code>progresso.json</code> e substitua o arquivo <code>dados/progresso.json</code> no GitHub.</p>
+    <div class="row"><button class="btn solid" id="advance" type="button">Concluímos este estudo</button><button class="btn quiet" id="undo" type="button" disabled>Desfazer</button></div>
+    <div class="fields">
+      <div class="field"><label for="f-book">Livro atual</label><select id="f-book"></select></div>
+      <div class="field"><label for="f-ch">Capítulo</label><input id="f-ch" type="number" min="1" inputmode="numeric"></div>
+      <div class="field"><label for="f-per">Capítulos por estudo</label><input id="f-per" type="number" min="1" max="20" inputmode="numeric"></div>
+      <div class="field"><label for="f-time">Horário</label><input id="f-time" type="time"></div>
+      <div class="field"><label for="f-pause">Segundas de pausa por ano</label><input id="f-pause" type="number" min="0" max="40" inputmode="numeric"></div>
+    </div>
+    <div class="row"><button class="btn" id="dl" type="button">Baixar progresso.json</button><button class="btn quiet" id="copy" type="button">Copiar o texto</button><button class="btn quiet" id="reset" type="button">Voltar ao que está no site</button></div>
+    <div class="status" id="status"></div>
+  </section>
+
+  <footer>
+    <div class="rule" style="width:100%" aria-hidden="true">✠</div>
+    <span>1.189 capítulos · 66 livros · uma segunda-feira de cada vez</span>
+    <span>Gravuras de Gustave Doré (1866) e pintura de Rembrandt (1635), em domínio público, via Wikimedia Commons.</span>
+  </footer>
+</main>
+
+<script>
+const BOOKS=[["Gênesis","Gn",50],["Êxodo","Êx",40],["Levítico","Lv",27],["Números","Nm",36],["Deuteronômio","Dt",34],["Josué","Js",24],["Juízes","Jz",21],["Rute","Rt",4],["1 Samuel","1Sm",31],["2 Samuel","2Sm",24],["1 Reis","1Rs",22],["2 Reis","2Rs",25],["1 Crônicas","1Cr",29],["2 Crônicas","2Cr",36],["Esdras","Ed",10],["Neemias","Ne",13],["Ester","Et",10],["Jó","Jó",42],["Salmos","Sl",150],["Provérbios","Pv",31],["Eclesiastes","Ec",12],["Cânticos","Ct",8],["Isaías","Is",66],["Jeremias","Jr",52],["Lamentações","Lm",5],["Ezequiel","Ez",48],["Daniel","Dn",12],["Oseias","Os",14],["Joel","Jl",3],["Amós","Am",9],["Obadias","Ob",1],["Jonas","Jn",4],["Miqueias","Mq",7],["Naum","Na",3],["Habacuque","Hc",3],["Sofonias","Sf",3],["Ageu","Ag",2],["Zacarias","Zc",14],["Malaquias","Ml",4],
+["Mateus","Mt",28],["Marcos","Mc",16],["Lucas","Lc",24],["João","Jo",21],["Atos","At",28],["Romanos","Rm",16],["1 Coríntios","1Co",16],["2 Coríntios","2Co",13],["Gálatas","Gl",6],["Efésios","Ef",6],["Filipenses","Fp",4],["Colossenses","Cl",4],["1 Tessalonicenses","1Ts",5],["2 Tessalonicenses","2Ts",3],["1 Timóteo","1Tm",6],["2 Timóteo","2Tm",4],["Tito","Tt",3],["Filemom","Fm",1],["Hebreus","Hb",13],["Tiago","Tg",5],["1 Pedro","1Pe",5],["2 Pedro","2Pe",3],["1 João","1Jo",5],["2 João","2Jo",1],["3 João","3Jo",1],["Judas","Jd",1],["Apocalipse","Ap",22]];
+const TOTAL=1189, OT_END=929;
+const $=id=>document.getElementById(id);
+const fold=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().trim();
+const bookIndex=name=>{ const f=fold(name); return BOOKS.findIndex(b=>fold(b[0])===f||fold(b[1])===f); };
+const fmtInt=n=>n.toLocaleString("pt-BR");
+const cap1=t=>t.charAt(0).toUpperCase()+t.slice(1);
+const hm=t=>t.replace(":","h");
+
+/* ---------- state (from dados/progresso.json) ---------- */
+const FALLBACK={livro:"Gênesis",capitulo:35,capitulosPorEstudo:1,horario:"19:40",segundasDePausaPorAno:0,livrosConcluidos:[]};
+let published=null, state=null, prev=null, studies=[], viewBook=null, target=null, nextRefresh=null;
+const DRAFT="estudo-biblico-rascunho";
+
+function toState(j){
+  const b=Math.max(0,bookIndex(j.livro));
+  const done=[...new Set((j.livrosConcluidos||[]).map(bookIndex).filter(i=>i>=0))];
+  return sanitize({book:b,chapter:j.capitulo,per:j.capitulosPorEstudo,time:j.horario,pause:j.segundasDePausaPorAno,done});
+}
+function toJson(s){
+  return {livro:BOOKS[s.book][0],capitulo:s.chapter,capitulosPorEstudo:s.per,horario:s.time,segundasDePausaPorAno:s.pause,
+    livrosConcluidos:[...s.done].sort((a,b)=>a-b).map(i=>BOOKS[i][0])};
+}
+function sanitize(o){
+  o={...o};
+  o.book=Math.min(65,Math.max(0,parseInt(o.book)||0));
+  o.chapter=Math.min(BOOKS[o.book][2],Math.max(1,parseInt(o.chapter)||1));
+  o.per=Math.min(20,Math.max(1,parseInt(o.per)||1));
+  o.pause=Math.min(40,Math.max(0,parseInt(o.pause)||0));
+  o.time=/^\d{2}:\d{2}$/.test(o.time||"")?o.time:"19:40";
+  o.done=[...new Set((o.done||[]).map(Number).filter(i=>i>=0&&i<66))];
+  return o;
+}
+
+/* ---------- calendar math ---------- */
+function plan(s){
+  const done=new Set(s.done), seq=[];
+  if(!done.has(s.book)) seq.push({b:s.book,from:s.chapter});
+  for(let k=1;k<66;k++){ const i=(s.book+k)%66; if(!done.has(i)) seq.push({b:i,from:1}); }
+  let remaining=0; const ends=[];
+  for(const x of seq){ remaining+=BOOKS[x.b][2]-x.from+1; ends.push({b:x.b,cum:remaining}); }
+  return {seq,remaining,ends,finished:remaining===0};
+}
+function firstStudy(s,now){
+  const [hh,mm]=s.time.split(":").map(Number);
+  const d=new Date(now); d.setHours(hh,mm,0,0);
+  let add=(1-d.getDay()+7)%7; if(add===0&&d<=now) add=7;
+  d.setDate(d.getDate()+add); return d;
+}
+function studyDate(s,k,now){ const d=firstStudy(s,now); d.setDate(d.getDate()+Math.floor(k*52/(52-s.pause))*7); return d; }
+function readChapters(s){ let r=0; for(const i of s.done) r+=BOOKS[i][2]; if(!s.done.includes(s.book)) r+=s.chapter-1; return r; }
+function linearPos(s){ let p=0; for(let i=0;i<s.book;i++) p+=BOOKS[i][2]; return p+s.chapter-1; }
+function rangeLabel(s,P){
+  let need=s.per; const parts=[];
+  for(const x of P.seq){ if(need<=0)break; const take=Math.min(BOOKS[x.b][2]-x.from+1,need);
+    parts.push(BOOKS[x.b][0]+" "+(take===1?x.from:x.from+"–"+(x.from+take-1))); need-=take; }
+  return parts.join(" · ");
+}
+function pdfFor(b,c){
+  const hits=studies.filter(p=>p.b===b&&p.de<=c&&c<=p.ate);
+  hits.sort((x,y)=>(y.de===c)-(x.de===c)||(x.ate-x.de)-(y.ate-y.de));
+  return hits[0]||null;
+}
+function chStatus(b,c){
+  if(state.done.includes(b)) return "read";
+  if(b===state.book) return c<state.chapter?"read":c===state.chapter?"now":"ahead";
+  return "ahead";
+}
+
+/* ---------- render ---------- */
+const longDate=d=>d.toLocaleDateString("pt-BR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+function render(){
+  const s=state, now=new Date(), P=plan(s), n=Math.ceil(P.remaining/s.per);
+  $("hero-time").textContent=hm(s.time);
+  const read=readChapters(s), pct=read/TOTAL*100;
+  $("fill").style.width=pct.toFixed(2)+"%";
+  $("dot").style.left=(P.finished?100:linearPos(s)/TOTAL*100).toFixed(2)+"%";
+  $("ot").style.left=(OT_END/TOTAL*100)+"%";
+  $("pct").textContent=pct.toLocaleString("pt-BR",{minimumFractionDigits:1,maximumFractionDigits:1})+"% lido";
+  $("left").textContent=fmtInt(P.remaining)+(P.remaining===1?" capítulo restante":" capítulos restantes");
+  $("now-ref").textContent=P.finished?"Concluído":BOOKS[s.book][0]+" "+s.chapter;
+  $("st-pdfs").textContent=fmtInt(new Set(studies.map(p=>p.arquivo)).size);
+  renderBooks(P); renderChapters(); fillOrg();
+  if(P.finished){
+    target=null; $("enddate").innerHTML='<span class="done-msg">Consumado.</span>';
+    ["cd-d","cd-h","cd-m","cd-s"].forEach(id=>$(id).textContent="0");
+    $("st-studies").textContent="0"; $("st-years").textContent="0"; $("st-book").textContent="—";
+    $("next-when").textContent="A Bíblia inteira"; $("next-what").textContent="Apocalipse 22 ✓"; $("next-pdf").hidden=true; return;
+  }
+  const end=studyDate(s,n-1,now); target=end; nextRefresh=firstStudy(s,now);
+  $("enddate").textContent=""; $("enddate").append(cap1(longDate(end)));
+  const sm=document.createElement("small"); sm.textContent="o dia em que leremos Apocalipse 22, às "+hm(s.time); $("enddate").append(sm);
+  $("dest-p").textContent="Se nada mudar, chegaremos lá em "+longDate(end)+". Uma segunda-feira de cada vez, até o último versículo.";
+  $("st-studies").textContent=fmtInt(n);
+  $("st-years").textContent=((end-now)/(365.2425*864e5)).toLocaleString("pt-BR",{minimumFractionDigits:1,maximumFractionDigits:1});
+  const ce=P.ends[0], cd=studyDate(s,Math.ceil(ce.cum/s.per)-1,now);
+  $("st-book").textContent=cd.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric"});
+  $("st-book-k").textContent="fim de "+BOOKS[ce.b][0];
+  const first=studyDate(s,0,now);
+  $("next-when").textContent="Próximo estudo · "+cap1(first.toLocaleDateString("pt-BR",{weekday:"long",day:"numeric",month:"long"}))+" · "+hm(s.time);
+  $("next-what").textContent=rangeLabel(s,P);
+  const p=pdfFor(s.book,s.chapter);
+  $("next-pdf").hidden=!p; if(p) $("next-pdf").href=p.arquivo;
+  tick();
+}
+function renderBooks(P){
+  document.querySelectorAll(".book").forEach(el=>{
+    const i=+el.dataset.i, done=state.done.includes(i), cur=!P.finished&&i===state.book&&!done;
+    el.classList.toggle("done",done); el.classList.toggle("now",cur);
+    el.querySelector(".p").style.width=done?"100%":cur?((state.chapter-1)/BOOKS[i][2]*100)+"%":"0";
+    el.title=BOOKS[i][0]+" · "+BOOKS[i][2]+" capítulos"+(done?" · concluído":cur?" · estamos no capítulo "+state.chapter:"");
+  });
+}
+function renderChapters(){
+  const b=viewBook??state.book, [name,ab,n]=BOOKS[b];
+  $("f-view").value=String(b); $("ch-title").querySelector("span").textContent=name;
+  const g=$("chgrid"); g.textContent=""; let read=0;
+  for(let c=1;c<=n;c++){
+    const st=chStatus(b,c), p=pdfFor(b,c);
+    if(st==="read") read++;
+    const el=document.createElement(p?"a":"span");
+    el.className="cell "+st; el.textContent=c;
+    const range=p?(p.de===p.ate?ab+" "+p.de:ab+" "+p.de+"–"+p.ate):"";
+    el.title=name+" "+c+(st==="read"?" · estudado":st==="now"?" · próximo estudo":"")+(p?" · abrir o PDF de "+range:"");
+    if(p){ el.href=p.arquivo; el.target="_blank"; el.rel="noopener"; el.setAttribute("aria-label",el.title);
+      el.insertAdjacentHTML("beforeend",'<svg aria-hidden="true"><use href="#scroll"/></svg>'); }
+    g.append(el);
+  }
+  const files=new Set(studies.filter(p=>p.b===b).map(p=>p.arquivo)).size;
+  $("chsum").innerHTML="";
+  [[read+" de "+n,"capítulos estudados"],[String(files),files===1?"estudo em PDF":"estudos em PDF"],[String(n-read),"pela frente neste livro"]]
+    .forEach(([v,k])=>{ const s=document.createElement("span"),B=document.createElement("b"); B.textContent=v; s.append(B," "+k); $("chsum").append(s); });
+}
+const pad=n=>String(n).padStart(2,"0");
+function tick(){
+  if(!target) return;
+  if(nextRefresh && new Date()>=nextRefresh){ render(); return; }
+  let ms=Math.max(0,target-new Date());
+  const d=Math.floor(ms/864e5); ms-=d*864e5; const h=Math.floor(ms/36e5); ms-=h*36e5; const m=Math.floor(ms/6e4); ms-=m*6e4;
+  $("cd-d").textContent=fmtInt(d); $("cd-h").textContent=pad(h); $("cd-m").textContent=pad(m); $("cd-s").textContent=pad(Math.floor(ms/1e3));
+}
+setInterval(tick,1000);
+
+/* ---------- organizer (only with #organizar) ---------- */
+function fillOrg(){
+  if($("org").hidden) return;
+  $("f-book").value=String(state.book); $("f-ch").max=BOOKS[state.book][2]; $("f-ch").value=state.chapter;
+  $("f-per").value=state.per; $("f-time").value=state.time; $("f-pause").value=state.pause; $("undo").disabled=!prev;
+}
+function commit(next,undoable=true){
+  if(undoable) prev=JSON.parse(JSON.stringify(state));
+  state=sanitize(next); try{ localStorage.setItem(DRAFT,JSON.stringify(toJson(state))); }catch(e){}
+  render(); flash("Rascunho guardado neste aparelho. Baixe o arquivo para publicar.");
+}
+function nextOpen(s,from){ for(let k=1;k<=66;k++){ const i=(from+k)%66; if(!s.done.includes(i)) return i; } return from; }
+function advance(){
+  const s=JSON.parse(JSON.stringify(state)); let need=s.per;
+  while(need>0&&s.done.length<66){
+    if(s.done.includes(s.book)){ s.book=nextOpen(s,s.book); s.chapter=1; continue; }
+    const left=BOOKS[s.book][2]-s.chapter+1;
+    if(need<left){ s.chapter+=need; need=0; }
+    else{ need-=left; s.done.push(s.book); if(s.done.length<66){ s.book=nextOpen(s,s.book); s.chapter=1; } }
+  }
+  commit(s);
+}
+let flashT; function flash(t){ $("status").textContent=t; clearTimeout(flashT); flashT=setTimeout(()=>$("status").textContent="",5000); }
+function jsonText(){ return JSON.stringify(toJson(state),null,2)+"\n"; }
+function setupOrg(){
+  const on=location.hash==="#organizar"; $("org").hidden=!on; if(on) fillOrg();
+}
+
+/* ---------- build ---------- */
+BOOKS.forEach((b,i)=>{
+  for(const id of ["f-view","f-book"]){ const o=document.createElement("option"); o.value=i; o.textContent=b[0]; $(id).append(o); }
+  const el=document.createElement("button"); el.type="button"; el.className="book"; el.dataset.i=i;
+  el.innerHTML='<span class="ab"></span><span class="ch"></span><span class="p"></span>';
+  el.querySelector(".ab").textContent=b[1]; el.querySelector(".ch").textContent=b[2]+" cap.";
+  el.setAttribute("aria-label",b[0]);
+  el.addEventListener("click",()=>{ viewBook=i; renderChapters(); document.querySelector(".chapters").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); });
+  $(i<39?"ot-books":"nt-books").append(el);
+});
+$("f-view").addEventListener("change",e=>{ viewBook=+e.target.value; renderChapters(); });
+$("advance").addEventListener("click",advance);
+$("undo").addEventListener("click",()=>{ if(prev){ const p=prev; prev=null; commit(p,false); flash("Desfeito."); } });
+$("f-book").addEventListener("change",e=>{ const s={...state,book:+e.target.value,chapter:1}; s.done=s.done.filter(x=>x!==s.book); commit(s); });
+$("f-ch").addEventListener("change",e=>commit({...state,chapter:e.target.value}));
+$("f-per").addEventListener("change",e=>commit({...state,per:e.target.value}));
+$("f-time").addEventListener("change",e=>commit({...state,time:e.target.value}));
+$("f-pause").addEventListener("change",e=>commit({...state,pause:e.target.value}));
+$("dl").addEventListener("click",()=>{
+  const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([jsonText()],{type:"application/json"}));
+  a.download="progresso.json"; document.body.append(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+  flash("Arquivo baixado. Agora envie para dados/progresso.json no GitHub.");
+});
+$("copy").addEventListener("click",async()=>{ try{ await navigator.clipboard.writeText(jsonText()); flash("Texto copiado."); }catch(e){ flash("Não deu para copiar. Use o botão de baixar."); } });
+$("reset").addEventListener("click",()=>{ try{ localStorage.removeItem(DRAFT); }catch(e){} prev=null; state=published; render(); flash("Voltou ao progresso publicado."); });
+addEventListener("hashchange",setupOrg);
+
+(async function boot(){
+  setupOrg();
+  try{ const r=await fetch("dados/progresso.json",{cache:"no-store"}); published=toState(await r.json()); }
+  catch(e){ published=toState(FALLBACK); }
+  try{ const r=await fetch("dados/estudos.json",{cache:"no-store"}); const j=await r.json();
+    studies=(j.estudos||[]).map(x=>({b:bookIndex(x.livro),de:+x.de,ate:+(x.ate||x.de),arquivo:String(x.arquivo||"")})).filter(x=>x.b>=0&&x.arquivo&&!/^\s*javascript:/i.test(x.arquivo)); }
+  catch(e){ studies=[]; }
+  state=published;
+  if(location.hash==="#organizar"){ try{ const d=localStorage.getItem(DRAFT); if(d){ state=toState(JSON.parse(d)); flash("Mostrando o seu rascunho deste aparelho."); } }catch(e){} }
+  render();
+})();
+
+/* ---------- candle embers ---------- */
+(function(){
+  const c=$("embers"), x=c.getContext("2d"), reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let W,H,E=[],r=1;
+  function size(){ r=devicePixelRatio||1; W=c.width=innerWidth*r; H=c.height=innerHeight*r;
+    E=Array.from({length:Math.round(innerWidth*innerHeight/14000)},()=>spawn(true)); }
+  function spawn(any){ return {x:Math.random()*W,y:any?Math.random()*H:H+10,s:(Math.random()*1.4+.4)*r,v:(Math.random()*.35+.12)*r,w:Math.random()*6.28,a:Math.random()*.55+.15}; }
+  function draw(){
+    x.clearRect(0,0,W,H);
+    const g=x.createRadialGradient(W*.5,H*1.05,0,W*.5,H*1.05,Math.max(W,H)*.75);
+    g.addColorStop(0,"rgba(142,31,26,0.10)"); g.addColorStop(1,"rgba(0,0,0,0)"); x.fillStyle=g; x.fillRect(0,0,W,H);
+    for(const e of E){
+      if(!reduce){ e.y-=e.v; e.w+=.02; e.x+=Math.sin(e.w)*.25*r; if(e.y<-10) Object.assign(e,spawn(false)); }
+      const fade=Math.min(1,e.y/(H*.6));
+      x.globalAlpha=e.a*fade; x.fillStyle=e.s>1.3*r?"#e0b867":"#c9743c";
+      x.beginPath(); x.arc(e.x,e.y,e.s,0,6.283); x.fill();
+    }
+    x.globalAlpha=1; if(!reduce) requestAnimationFrame(draw);
+  }
+  addEventListener("resize",()=>{ size(); if(reduce) draw(); }); size(); draw();
+})();
+</script>
+</body>
+</html>
