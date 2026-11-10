@@ -49,7 +49,7 @@ Também dá para usar a **área do organizador**. Abra o site com `#organizar` n
 
 ## Adicionar o PDF de um novo estudo
 
-No site, abaixo da grade de capítulos, toque em **＋ Adicionar o PDF de um estudo**. O site mostra o nome certo do arquivo e o botão que abre a pasta do livro no GitHub. O caminho é este:
+Abra a área do organizador: o endereço do site com `#organizar` no fim (https://thyfanixs.github.io/estudo-biblico/#organizar). Ela não aparece para os visitantes. Lá, em **Adicionar o PDF de um estudo**, escolha o livro e o site mostra o nome certo do arquivo e o botão que abre a pasta do livro no GitHub. Só a sua conta do GitHub pode enviar arquivos. O caminho é este:
 
 1. No Canva: **Compartilhar → Baixar → PDF padrão**, com **Compactar arquivo** marcado. Pelo navegador, o GitHub aceita até 25 MB.
 2. Dê ao arquivo o nome do capítulo, como `gn-37.pdf`. Se o estudo cobrir mais de um capítulo, use o intervalo, como `gn-37-38.pdf`.

@@ -267,16 +267,6 @@ footer a{color:var(--ash)}
     <div class="legend"><span><i class="l-read"></i>estudado</span><span><i class="l-now"></i>próximo estudo</span><span><i></i>pela frente</span><span><svg><use href="#scroll"/></svg>tem PDF: toque para abrir</span><span>sem ícone: abre o capítulo na Bíblia</span></div>
     <div class="chrow">
       <a class="btn quiet" id="read-book" href="#" target="_blank" rel="noopener">Ler Gênesis na Bíblia</a>
-      <button class="btn quiet" id="add-toggle" type="button" aria-expanded="false" aria-controls="addpdf">＋ Adicionar o PDF de um estudo</button>
-    </div>
-    <div class="addpdf" id="addpdf" hidden>
-      <ol>
-        <li>No Canva, abra a apresentação e vá em <b>Compartilhar → Baixar → PDF padrão</b>. Marque <b>Compactar arquivo</b>: pelo navegador, o GitHub aceita até 25 MB.</li>
-        <li>Dê ao arquivo o nome <code id="add-name">gn-37.pdf</code>. Se o estudo cobrir mais de um capítulo, use o intervalo, como <code id="add-name2">gn-37-38.pdf</code>.</li>
-        <li>Toque no botão abaixo, entre na sua conta do GitHub, arraste o PDF para a página e clique em <b>Commit changes</b>.</li>
-      </ol>
-      <a class="btn solid" id="add-go" href="#" target="_blank" rel="noopener">Enviar para a pasta de Gênesis</a>
-      <p>Em uns três minutos o capítulo acende aqui com o PDF. O GitHub comprime o arquivo e atualiza a lista sozinho.</p>
     </div>
   </section>
 
@@ -323,6 +313,17 @@ footer a{color:var(--ash)}
     </div>
     <div class="row"><button class="btn" id="dl" type="button">Baixar progresso.json</button><button class="btn quiet" id="copy" type="button">Copiar o texto</button><button class="btn quiet" id="reset" type="button">Voltar ao que está no site</button></div>
     <div class="status" id="status"></div>
+    <div class="addpdf" id="addpdf">
+      <h3 class="cap" style="margin:0">Adicionar o PDF de um estudo</h3>
+      <div class="field" style="max-width:280px"><label for="f-addbook">Livro do estudo</label><select id="f-addbook"></select></div>
+      <ol>
+        <li>No Canva, abra a apresentação e vá em <b>Compartilhar → Baixar → PDF padrão</b>. Marque <b>Compactar arquivo</b>: pelo navegador, o GitHub aceita até 25 MB.</li>
+        <li>Dê ao arquivo o nome <code id="add-name">gn-37.pdf</code>. Se o estudo cobrir mais de um capítulo, use o intervalo, como <code id="add-name2">gn-37-38.pdf</code>.</li>
+        <li>Toque no botão abaixo, entre na sua conta do GitHub, arraste o PDF para a página e clique em <b>Commit changes</b>.</li>
+      </ol>
+      <a class="btn solid" id="add-go" href="#" target="_blank" rel="noopener">Enviar para a pasta de Gênesis</a>
+      <p>Em uns três minutos o capítulo acende no site com o PDF. O GitHub comprime o arquivo e atualiza a lista sozinho. Só a sua conta do GitHub tem permissão para enviar.</p>
+    </div>
   </section>
 
   <footer>
@@ -477,6 +478,11 @@ function renderChapters(){
   [[read+" de "+n,"capítulos estudados"],[String(files),files===1?"estudo em PDF":"estudos em PDF"],[String(n-read),"pela frente neste livro"]]
     .forEach(([v,k])=>{ const s=document.createElement("span"),B=document.createElement("b"); B.textContent=v; s.append(B," "+k); $("chsum").append(s); });
   $("read-book").href=bibleUrl(b,1); $("read-book").textContent="Ler "+name+" na Bíblia";
+  renderGallery(b);
+}
+function renderAdd(){
+  if($("org").hidden) return;
+  const b=+($("f-addbook").value||state.book), n=BOOKS[b][2], name=BOOKS[b][0];
   let nx=null; const startC=b===state.book?state.chapter:1;
   for(let c=startC;c<=n&&nx===null;c++) if(!pdfFor(b,c)) nx=c;
   for(let c=1;c<startC&&nx===null;c++) if(!pdfFor(b,c)) nx=c;
@@ -485,7 +491,6 @@ function renderChapters(){
   $("add-name2").textContent=pre+"-"+two(nx)+"-"+two(Math.min(n,nx+1))+".pdf";
   $("add-go").href="https://github.com/"+REPO+"/upload/main/estudos/"+folder(b);
   $("add-go").textContent="Enviar para a pasta de "+name;
-  renderGallery(b);
 }
 function renderGallery(b){
   const g=$("gallery"), list=(paintings[BOOKS[b][0]]||[]).slice(0,3);
@@ -513,7 +518,7 @@ setInterval(tick,1000);
 function fillOrg(){
   if($("org").hidden) return;
   $("f-book").value=String(state.book); $("f-ch").max=BOOKS[state.book][2]; $("f-ch").value=state.chapter;
-  $("f-per").value=state.per; $("f-time").value=state.time; $("f-pause").value=state.pause; $("undo").disabled=!prev;
+  $("f-per").value=state.per; $("f-time").value=state.time; $("f-pause").value=state.pause; $("undo").disabled=!prev; renderAdd();
 }
 function commit(next,undoable=true){
   if(undoable) prev=JSON.parse(JSON.stringify(state));
@@ -534,12 +539,12 @@ function advance(){
 let flashT; function flash(t){ $("status").textContent=t; clearTimeout(flashT); flashT=setTimeout(()=>$("status").textContent="",5000); }
 function jsonText(){ return JSON.stringify(toJson(state),null,2)+"\n"; }
 function setupOrg(){
-  const on=location.hash==="#organizar"; $("org").hidden=!on; if(on) fillOrg();
+  const on=location.hash==="#organizar"; $("org").hidden=!on; if(on&&state){ $("f-addbook").value=String(state.book); fillOrg(); $("org").scrollIntoView(); }
 }
 
 /* ---------- build ---------- */
 BOOKS.forEach((b,i)=>{
-  for(const id of ["f-view","f-book"]){ const o=document.createElement("option"); o.value=i; o.textContent=b[0]; $(id).append(o); }
+  for(const id of ["f-view","f-book","f-addbook"]){ const o=document.createElement("option"); o.value=i; o.textContent=b[0]; $(id).append(o); }
   const el=document.createElement("button"); el.type="button"; el.className="book"; el.dataset.i=i;
   el.innerHTML='<span class="ab"></span><span class="ch"></span><span class="p"></span>';
   el.querySelector(".ab").textContent=b[1]; el.querySelector(".ch").textContent=b[2]+" cap.";
@@ -548,7 +553,7 @@ BOOKS.forEach((b,i)=>{
   $(i<39?"ot-books":"nt-books").append(el);
 });
 $("f-view").addEventListener("change",e=>{ viewBook=+e.target.value; renderChapters(); });
-$("add-toggle").addEventListener("click",()=>{ const p=$("addpdf"); p.hidden=!p.hidden; $("add-toggle").setAttribute("aria-expanded",String(!p.hidden)); });
+$("f-addbook").addEventListener("change",renderAdd);
 $("advance").addEventListener("click",advance);
 $("undo").addEventListener("click",()=>{ if(prev){ const p=prev; prev=null; commit(p,false); flash("Desfeito."); } });
 $("f-book").addEventListener("change",e=>{ const s={...state,book:+e.target.value,chapter:1}; s.done=s.done.filter(x=>x!==s.book); commit(s); });
@@ -575,7 +580,9 @@ addEventListener("hashchange",setupOrg);
   try{ const r=await fetch("dados/pinturas.json",{cache:"no-store"}); paintings=(await r.json()).livros||{}; }catch(e){ paintings={}; }
   state=published;
   if(location.hash==="#organizar"){ try{ const d=localStorage.getItem(DRAFT); if(d){ state=toState(JSON.parse(d)); flash("Mostrando o seu rascunho deste aparelho."); } }catch(e){} }
-  render();
+  $("f-addbook").value=String(state.book);
+  render(); renderAdd();
+  if(!$("org").hidden) $("org").scrollIntoView();
 })();
 
 /* ---------- candle embers ---------- */
