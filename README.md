@@ -49,17 +49,23 @@ Também dá para usar a **área do organizador**. Abra o site com `#organizar` n
 
 ## Adicionar o PDF de um novo estudo
 
-1. Exporte a apresentação do Canva em PDF.
-2. Salve em `estudos/<livro>/`, por exemplo `estudos/genesis/gn-37.pdf`.
-3. Acrescente uma linha em `dados/estudos.json`:
+No site, abaixo da grade de capítulos, toque em **＋ Adicionar o PDF de um estudo**. O site mostra o nome certo do arquivo e o botão que abre a pasta do livro no GitHub. O caminho é este:
 
-```json
-{ "livro": "Gênesis", "de": 37, "ate": 37, "arquivo": "estudos/genesis/gn-37.pdf" }
-```
+1. No Canva: **Compartilhar → Baixar → PDF padrão**, com **Compactar arquivo** marcado. Pelo navegador, o GitHub aceita até 25 MB.
+2. Dê ao arquivo o nome do capítulo, como `gn-37.pdf`. Se o estudo cobrir mais de um capítulo, use o intervalo, como `gn-37-38.pdf`.
+3. Envie o arquivo para a pasta do livro, como `estudos/genesis/` ou `estudos/exodo/` (no GitHub: **Add file → Upload files**).
 
-Se o estudo cobrir mais de um capítulo, use `de` e `ate` (ex.: `"de": 37, "ate": 38`).
+Pronto. A automação em `.github/workflows/estudos.yml` comprime o PDF se ele passar de 5 MB, refaz `dados/estudos.json` e publica o site de novo. Leva uns três minutos.
 
-Dica: o GitHub não aceita arquivos acima de 100 MB. Os PDFs que saem do Canva costumam ser grandes. Os daqui foram comprimidos e ficaram entre 1 e 7 MB cada.
+O nome da pasta é o nome do livro sem acentos e com hífen: `genesis`, `exodo`, `1-samuel`, `joao`, `jo` (Jó), `apocalipse`. Para rodar a mesma atualização no computador: `python3 scripts/atualizar_estudos.py`.
+
+## Bíblia online
+
+Cada capítulo sem PDF abre o texto na [Bíblia Online](https://www.bibliaonline.com.br/acf), que é gratuita e não pede cadastro (Almeida Corrigida Fiel). Assim, quem não tem Bíblia pode acompanhar o estudo.
+
+## Pinturas
+
+`dados/pinturas.json` diz quais são as três imagens de cada livro. Os arquivos ficam em `img/livros/`. A galeria muda quando outro livro é escolhido em "Ver o livro".
 
 ## Ver no computador antes de publicar
 
@@ -73,7 +79,4 @@ e abra http://localhost:8000.
 
 ## Créditos das imagens
 
-Todas em domínio público, via Wikimedia Commons:
-
-- *A Criação da Luz*, *O Dilúvio*, *Jacó luta com o anjo* e *A Nova Jerusalém*: Gustave Doré, ilustrações da Bíblia (1866).
-- *O Sacrifício de Isaque*: Rembrandt (1635), Museu Hermitage.
+Todas em domínio público, via Wikimedia Commons. O autor e o ano de cada obra aparecem na legenda da galeria e em `dados/pinturas.json`, junto com o link da página original no Commons.
